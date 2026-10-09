@@ -1,0 +1,30 @@
+{
+  "record_type": "controlled_verifier_cleanup_branches",
+  "status": "passed",
+  "verifier_sha256": "d8c14dbcba1a4854d4cdd8353d4cae9748fec4c704b17fda5ce14f12ccb86ffa",
+  "method": "Actual verify.ps1 ran in separate PowerShell children with mapping/Python/location stubs; no real drive mapping or Python tests ran",
+  "failed_creation": {
+    "mapping_stub_exit": 23,
+    "verifier_exit": 1,
+    "create_calls": 1,
+    "cleanup_calls": 0,
+    "python_stub_called": false
+  },
+  "successful_creation": {
+    "mapping_stub_exit": 0,
+    "verifier_exit": 0,
+    "create_calls": 1,
+    "cleanup_calls": 1,
+    "python_stub_arguments": "-B -m unittest -v test_redaction_cli",
+    "python_tests_executed": false
+  },
+  "historical_receipt_sha256": "dd8c528bffaabab5b2a40758c25e285445f56915b4bbd846e9b69552e7da2a15",
+  "historical_tests": 6,
+  "historical_duration_seconds": 8.433,
+  "historical_receipt_changed": false,
+  "suite_repeated_after_verifier_fix": false,
+  "limits": [
+    "The full six-test suite was not rerun after the verifier change.",
+    "The targeted check proves the control-flow branches with stubs; it does not test real subst behavior or Python test execution."
+  ]
+}

@@ -1,0 +1,3750 @@
+{
+  "source_url": "https://github.com/data-privacy-stack/presidio",
+  "commit": "2523c7b74a469270c5c78bb253f140eafca21e31",
+  "commit_date": "2026-10-08",
+  "files": 467,
+  "bytes": 3162137,
+  "modes": {
+    "100644": 464,
+    "100755": 3
+  },
+  "git_blob_mismatches": [],
+  "entries": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "git_blob": "9afc65b563ea7064fb04f68e3bbe31a15080f666",
+      "copy_git_blob": "9afc65b563ea7064fb04f68e3bbe31a15080f666",
+      "sha256": "f3e86ee59a49bcfb0d9a9547484d55224ea7b2d04f95b1947b4d18d17f6de535",
+      "bytes": 1084
+    },
+    {
+      "path": "NOTICE",
+      "mode": "100644",
+      "git_blob": "1b0d73e59a3bfa07ea007469bca01f939ae45428",
+      "copy_git_blob": "1b0d73e59a3bfa07ea007469bca01f939ae45428",
+      "sha256": "07997418ab87066ace8b0c9aceb76bea1291a77c62b16434b3d0b925af5b883f",
+      "bytes": 80927
+    },
+    {
+      "path": "README.MD",
+      "mode": "100644",
+      "git_blob": "a877d23deed3d2245b8b4afda308deeb10f5b534",
+      "copy_git_blob": "a877d23deed3d2245b8b4afda308deeb10f5b534",
+      "sha256": "b553970feb389eaa4cb4a09362ee1a5825e4844a63ea2a2d729c6fca18a140e0",
+      "bytes": 6722
+    },
+    {
+      "path": "presidio-analyzer/.dockerignore",
+      "mode": "100644",
+      "git_blob": "06a12408dea7a0651bc14b7b8410f76b5cd775f4",
+      "copy_git_blob": "06a12408dea7a0651bc14b7b8410f76b5cd775f4",
+      "sha256": "63b3792e7093942e073512f73cffc7f79985b401ec1852ad7ce75bb51b50f63b",
+      "bytes": 1231
+    },
+    {
+      "path": "presidio-analyzer/Dockerfile",
+      "mode": "100644",
+      "git_blob": "7a6f055162c3d9195f32acbc9655b65f5c504ecd",
+      "copy_git_blob": "7a6f055162c3d9195f32acbc9655b65f5c504ecd",
+      "sha256": "3f1c8034d17bf468793b49e77f60fdfdd232a62794defd61ffba883f045a6c52",
+      "bytes": 1951
+    },
+    {
+      "path": "presidio-analyzer/Dockerfile.dev",
+      "mode": "100644",
+      "git_blob": "ef48689f7278b7f70e169a5ac57e19a53bd04034",
+      "copy_git_blob": "ef48689f7278b7f70e169a5ac57e19a53bd04034",
+      "sha256": "d801a6acd94514ac66a41a809b31ec6b4015d19af150d27718a8bcb3f872c0da",
+      "bytes": 693
+    },
+    {
+      "path": "presidio-analyzer/Dockerfile.stanza",
+      "mode": "100644",
+      "git_blob": "d2200377bfcf09ed923f0ec4c070aceaf14ed193",
+      "copy_git_blob": "d2200377bfcf09ed923f0ec4c070aceaf14ed193",
+      "sha256": "71e1969ca96e7adb1eed58ac8ba8f03546cb82e3fac687a2756ad0603021f436",
+      "bytes": 1820
+    },
+    {
+      "path": "presidio-analyzer/Dockerfile.transformers",
+      "mode": "100644",
+      "git_blob": "de9ba3b67e4155c856141ad9929cf32fe476943f",
+      "copy_git_blob": "de9ba3b67e4155c856141ad9929cf32fe476943f",
+      "sha256": "fd30eabf9a0cd47663cc366606e8f14b52643404843a2d8f50b50ef55755b5ce",
+      "bytes": 1531
+    },
+    {
+      "path": "presidio-analyzer/Dockerfile.windows",
+      "mode": "100644",
+      "git_blob": "7dee23e11ed3f2a297a6a5424084487616ceaa37",
+      "copy_git_blob": "7dee23e11ed3f2a297a6a5424084487616ceaa37",
+      "sha256": "c81753872cb89ef3a50ead909876b5e2352de956d294ab75fa282ea9d63fc836",
+      "bytes": 1924
+    },
+    {
+      "path": "presidio-analyzer/Pipfile",
+      "mode": "100644",
+      "git_blob": "645a67eae7756b542ed9f1aa4a24ec9759f884c9",
+      "copy_git_blob": "645a67eae7756b542ed9f1aa4a24ec9759f884c9",
+      "sha256": "379d05a20141cd9ec103926774a7ab3a057fb42b57b00d36113d009960901d71",
+      "bytes": 139
+    },
+    {
+      "path": "presidio-analyzer/README.md",
+      "mode": "100644",
+      "git_blob": "e81c645ee36473e73da0c5bf6ab8d156d29df2c5",
+      "copy_git_blob": "e81c645ee36473e73da0c5bf6ab8d156d29df2c5",
+      "sha256": "91b79a8421cc5edd47f1c4dc20f603067c430674765bdc7b3aafe195df759b39",
+      "bytes": 3762
+    },
+    {
+      "path": "presidio-analyzer/app.py",
+      "mode": "100644",
+      "git_blob": "567a796cd016da2b7e4dd961483087906515c5ec",
+      "copy_git_blob": "567a796cd016da2b7e4dd961483087906515c5ec",
+      "sha256": "b6cc79eccbade1e6886a6eb5b79c307872e3e32f2e674cebc34e458c47185ca5",
+      "bytes": 7182
+    },
+    {
+      "path": "presidio-analyzer/deploytoazure.json",
+      "mode": "100644",
+      "git_blob": "2796a886e386e54ee1ccc68d7dd0d4a811c1f2d9",
+      "copy_git_blob": "2796a886e386e54ee1ccc68d7dd0d4a811c1f2d9",
+      "sha256": "30e4aeba20be38e63edb8a0d968da29d2036561254a9a42eb94a396b70766a64",
+      "bytes": 2485
+    },
+    {
+      "path": "presidio-analyzer/entrypoint.sh",
+      "mode": "100755",
+      "git_blob": "8a90e902a1cd5273983ff778cdaebb8510c5624d",
+      "copy_git_blob": "8a90e902a1cd5273983ff778cdaebb8510c5624d",
+      "sha256": "52e05a2bda2413429665b13bdcd9fb7d7fc80be61b5c99073070d3a5e3b0c653",
+      "bytes": 76
+    },
+    {
+      "path": "presidio-analyzer/install_dependencies.sh",
+      "mode": "100755",
+      "git_blob": "f16e60e226609648bc7923d42f4a167d561fe8e6",
+      "copy_git_blob": "f16e60e226609648bc7923d42f4a167d561fe8e6",
+      "sha256": "96726e8437b2b60e301c34795c7185a5ab9c5be56226793e2a2b6cbb6df0b400",
+      "bytes": 141
+    },
+    {
+      "path": "presidio-analyzer/install_nlp_models.py",
+      "mode": "100644",
+      "git_blob": "767f5a8b8ec7c046545b62b680467da6106e4c05",
+      "copy_git_blob": "767f5a8b8ec7c046545b62b680467da6106e4c05",
+      "sha256": "17571fcea2de0cb6177121576569a3a911ffc007113df466f1db386c0db28fcb",
+      "bytes": 6193
+    },
+    {
+      "path": "presidio-analyzer/logging.ini",
+      "mode": "100644",
+      "git_blob": "246e0e23681690eef7d87a211a141ad0f2c673f3",
+      "copy_git_blob": "246e0e23681690eef7d87a211a141ad0f2c673f3",
+      "sha256": "00788ea22b0bbe6052c2e28fe63cc9178a2752d2b8664f58f8681db09018f2df",
+      "bytes": 447
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/__init__.py",
+      "mode": "100644",
+      "git_blob": "61de87790e103ec0735ad263681a37f7ff72d57e",
+      "copy_git_blob": "61de87790e103ec0735ad263681a37f7ff72d57e",
+      "sha256": "4a6e9566a79c4cc9eaeeb68f3a531c9a15318117aece4fdce11b7af0bfd469c6",
+      "bytes": 2135
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/analysis_explanation.py",
+      "mode": "100644",
+      "git_blob": "4248f3dc6cefe7a85002aed66c474598ec0c7e49",
+      "copy_git_blob": "4248f3dc6cefe7a85002aed66c474598ec0c7e49",
+      "sha256": "1a2683027ec887dd03aa58728cff6222fd36d8af0f7aa8749e2695e8461cfe15",
+      "bytes": 2311
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/analyzer_engine.py",
+      "mode": "100644",
+      "git_blob": "3ff835d1d15aaad3595fc9e249201b269fa65050",
+      "copy_git_blob": "3ff835d1d15aaad3595fc9e249201b269fa65050",
+      "sha256": "987e8ea469d461cb10069783659d085360c0fd92528c3378e25035f4467dc48d",
+      "bytes": 20166
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/analyzer_engine_provider.py",
+      "mode": "100644",
+      "git_blob": "d03430a1f9d3a2e2bfd8e117e51f85ec3151c796",
+      "copy_git_blob": "d03430a1f9d3a2e2bfd8e117e51f85ec3151c796",
+      "sha256": "affc7e4bd0ff0fc5c7191b0daed18850db5c156df10f0a1f2b92a8343c37a87f",
+      "bytes": 7430
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/analyzer_request.py",
+      "mode": "100644",
+      "git_blob": "669d8bb822aff1e842f9c116371b52d976f9766d",
+      "copy_git_blob": "669d8bb822aff1e842f9c116371b52d976f9766d",
+      "sha256": "da147c3fcabb27c98d50aa841798fc4be4eb3a075f76820f661f7c7e2126d14f",
+      "bytes": 1729
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/app_tracer.py",
+      "mode": "100644",
+      "git_blob": "7aaa04a2e34d260eaca5b8dd3b239cdc72c394c9",
+      "copy_git_blob": "7aaa04a2e34d260eaca5b8dd3b239cdc72c394c9",
+      "sha256": "a5a24b453c0541389323f208415ed4df6df5605f14db04cb6601ac361f9ca8f7",
+      "bytes": 970
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/batch_analyzer_engine.py",
+      "mode": "100644",
+      "git_blob": "805d2a7a4c447cf70f397c0a06c871388c7122c6",
+      "copy_git_blob": "805d2a7a4c447cf70f397c0a06c871388c7122c6",
+      "sha256": "5e94473a57e2f9a47d267b9a454472684cbd43f703e767d025d1f28cca217638",
+      "bytes": 5825
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/chunkers/__init__.py",
+      "mode": "100644",
+      "git_blob": "0f42fcc5950144ba851e3de882d30943b2ac749b",
+      "copy_git_blob": "0f42fcc5950144ba851e3de882d30943b2ac749b",
+      "sha256": "feeb1732d9331fbe49db6081e529e2621d1f502f7f9dc0616078cc6a4b9a1d3b",
+      "bytes": 571
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/chunkers/base_chunker.py",
+      "mode": "100644",
+      "git_blob": "5547b878819019f1ab52a8cbfbdcc86fa3fece79",
+      "copy_git_blob": "5547b878819019f1ab52a8cbfbdcc86fa3fece79",
+      "sha256": "150f30afff728ba5b8284b55f2e7c164edaa4a7773bb5cd66002957ceacedb03",
+      "bytes": 5224
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/chunkers/character_based_text_chunker.py",
+      "mode": "100644",
+      "git_blob": "7c6a6e85f4f007c4c120e89ba934152363a0ce3d",
+      "copy_git_blob": "7c6a6e85f4f007c4c120e89ba934152363a0ce3d",
+      "sha256": "42184a354fce03a3cf9a1395f93a0a8bcae4caf1b53e513f5f45564781daa300",
+      "bytes": 4330
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/chunkers/text_chunker_provider.py",
+      "mode": "100644",
+      "git_blob": "eb989730cc7fea55ba91c7fa9b6225548d0c7549",
+      "copy_git_blob": "eb989730cc7fea55ba91c7fa9b6225548d0c7549",
+      "sha256": "341848262dd205a6ceea55b8e5d83601438a4ca7ab9ebdd7b1b0396b13044df9",
+      "bytes": 2095
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/chunkers/tokenizer_based_text_chunker.py",
+      "mode": "100644",
+      "git_blob": "21c08dba1ad2c9c9fae2ae6553cc6165a631111b",
+      "copy_git_blob": "21c08dba1ad2c9c9fae2ae6553cc6165a631111b",
+      "sha256": "9d6e237d8d63b8a292cf9f8a56662ed1a2e85b3008aee8f45755412485a9f75f",
+      "bytes": 7477
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/default.yaml",
+      "mode": "100644",
+      "git_blob": "68c90c5c743f32086e9f65ca04185f4a1d712160",
+      "copy_git_blob": "68c90c5c743f32086e9f65ca04185f4a1d712160",
+      "sha256": "97c29e40dc85c2bac711f3375ffac10fcf56ad889ff1a05f0f8eca126be591e5",
+      "bytes": 618
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/default_analyzer.yaml",
+      "mode": "100644",
+      "git_blob": "7fa18153f88489d3d2865bc197669b13fdb5a654",
+      "copy_git_blob": "7fa18153f88489d3d2865bc197669b13fdb5a654",
+      "sha256": "96a062efc850baa82a97265ae0c9c40eee9ee536ff3555a8a863d2eb32ce5c60",
+      "bytes": 55
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/default_analyzer_full.yaml",
+      "mode": "100644",
+      "git_blob": "a3788b4015d03391aeee08c808bccb092f44f043",
+      "copy_git_blob": "a3788b4015d03391aeee08c808bccb092f44f043",
+      "sha256": "2624ddd265217375b780c7189316211a0f76227aab85d21e5a5f377ff047ef91",
+      "bytes": 3827
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/default_recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "f03fe228a0af71fabdcd3292073466334b1b4bd3",
+      "copy_git_blob": "f03fe228a0af71fabdcd3292073466334b1b4bd3",
+      "sha256": "661c6a1054083ea3d97d2a08f9002eaabf762dbf19a33de6775fcfe4ec480f19",
+      "bytes": 13260
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/example_recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "5cc21fadd31d9ba52ac75b448c645fb07abc191f",
+      "copy_git_blob": "5cc21fadd31d9ba52ac75b448c645fb07abc191f",
+      "sha256": "c9e9d74887fd2863d9f77dd9f2d28a95a55bdf96c3c716e098457d92a1752654",
+      "bytes": 1316
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/langextract_config_azureopenai.yaml",
+      "mode": "100644",
+      "git_blob": "59b0be70317474916e0d6e7e34499f9c22f33484",
+      "copy_git_blob": "59b0be70317474916e0d6e7e34499f9c22f33484",
+      "sha256": "6320dd07feaf0cb8ea532f45f008eb516c890e392bc21254a961ed97ff508c69",
+      "bytes": 1323
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/langextract_config_basic.yaml",
+      "mode": "100644",
+      "git_blob": "13719bc54076c609db8536fdaf432cd2e974891d",
+      "copy_git_blob": "13719bc54076c609db8536fdaf432cd2e974891d",
+      "sha256": "feb3c5a86f07cdb894aa50f4a790d2c610179a02bcf1b74b1625c071886581d7",
+      "bytes": 1753
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/langextract_prompts/default_pii_phi_examples.yaml",
+      "mode": "100644",
+      "git_blob": "4565261f3153ca5dbea2377ab727fd6b98f80cbe",
+      "copy_git_blob": "4565261f3153ca5dbea2377ab727fd6b98f80cbe",
+      "sha256": "3a3abf17e97e8c2025bbab954b4318ad43b2439fe08910e9a9f9f6b927f1af26",
+      "bytes": 5170
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/langextract_prompts/default_pii_phi_prompt.j2",
+      "mode": "100644",
+      "git_blob": "f5edbffd55ea07a7cc99d2d9cee4d2ef28e0722c",
+      "copy_git_blob": "f5edbffd55ea07a7cc99d2d9cee4d2ef28e0722c",
+      "sha256": "b2ae404afde56ada085ab73de4dd8aced30727f894e75310fdd1f4ab0f7ebdf7",
+      "bytes": 1321
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/no_op.yaml",
+      "mode": "100644",
+      "git_blob": "0b2a6c7adf0a967e92765898f42e307dc2b79355",
+      "copy_git_blob": "0b2a6c7adf0a967e92765898f42e307dc2b79355",
+      "sha256": "6602ac072ff53b021e24bcd261142dadf65ab0c263a14c77e203e38e1409dbe1",
+      "bytes": 71
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/slim.yaml",
+      "mode": "100644",
+      "git_blob": "a0bd2d09c9725aa8d334b8d0472838de3143d4ed",
+      "copy_git_blob": "a0bd2d09c9725aa8d334b8d0472838de3143d4ed",
+      "sha256": "379c193d3ee010029561c82c81a58712a5cbf14fa9bec2b426f44af0d5c3deb7",
+      "bytes": 2578
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/slim_nlp.yaml",
+      "mode": "100644",
+      "git_blob": "d88086aabcf5cc58f8b648b461172b54626b93d2",
+      "copy_git_blob": "d88086aabcf5cc58f8b648b461172b54626b93d2",
+      "sha256": "fc6389f543c4b2ab6b02ccd6997554f1e6c17aaa34209d9becdbbded08307092",
+      "bytes": 83
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/spacy.yaml",
+      "mode": "100644",
+      "git_blob": "f315d304cccaf16048ae8614a9581106b5eac161",
+      "copy_git_blob": "f315d304cccaf16048ae8614a9581106b5eac161",
+      "sha256": "fd66d6a47d287d2b027c4becb4d9e9efe137c6e337bce72b69922d27515a8554",
+      "bytes": 626
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/spacy_multilingual.yaml",
+      "mode": "100644",
+      "git_blob": "0fc85bb5685d51e26fa0cfc7dbee3c4efa00ea72",
+      "copy_git_blob": "0fc85bb5685d51e26fa0cfc7dbee3c4efa00ea72",
+      "sha256": "850c6e3e7dedadb14f3896a784a4913e393c6267f344fd68103a0a4401bc84ee",
+      "bytes": 564
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/stanza.yaml",
+      "mode": "100644",
+      "git_blob": "b8b58d2d53505283ad40a9c1a531a905ecae0028",
+      "copy_git_blob": "b8b58d2d53505283ad40a9c1a531a905ecae0028",
+      "sha256": "7e40237d09e989c8491cfef2066db853105fadae0dd4fdbcf9184c1d22248192",
+      "bytes": 354
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/stanza_multilingual.yaml",
+      "mode": "100644",
+      "git_blob": "3694d9f45fd61c1c62be011ae2cc7ccb1c6f8621",
+      "copy_git_blob": "3694d9f45fd61c1c62be011ae2cc7ccb1c6f8621",
+      "sha256": "7e83bebffcda27844f1008f959fd4400eb459fa9a23236c07ffbbc7962da092b",
+      "bytes": 395
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/conf/transformers.yaml",
+      "mode": "100644",
+      "git_blob": "9bb0626f57d0436d81ae485a4217b72845d6e8bd",
+      "copy_git_blob": "9bb0626f57d0436d81ae485a4217b72845d6e8bd",
+      "sha256": "526f064724afeeb6d0fcd17e28ace27613f755af8baea4c52cc1edfe5609d1c1",
+      "bytes": 1230
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/context_aware_enhancers/__init__.py",
+      "mode": "100644",
+      "git_blob": "fbcfdf91bcebad22fb412ef812799a4ea1a6fc14",
+      "copy_git_blob": "fbcfdf91bcebad22fb412ef812799a4ea1a6fc14",
+      "sha256": "2337f0de3d8336f785ee62a7108899ef322534dc689c8adf300ef35970bdd3bf",
+      "bytes": 224
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/context_aware_enhancers/context_aware_enhancer.py",
+      "mode": "100644",
+      "git_blob": "eef52a98200e02bee896b3e5a913e0b66d081174",
+      "copy_git_blob": "eef52a98200e02bee896b3e5a913e0b66d081174",
+      "sha256": "c2fac9a7d4b6aef738ecb5388e532eca563dc74c7457e467eabc50295fb379f8",
+      "bytes": 2506
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/context_aware_enhancers/lemma_context_aware_enhancer.py",
+      "mode": "100644",
+      "git_blob": "aac1e4ed8c92206e18327801541b163b068f77f8",
+      "copy_git_blob": "aac1e4ed8c92206e18327801541b163b068f77f8",
+      "sha256": "6afd7a827e66fafb49b174502b224e084a0b1824afdda791aaa274bf28baced2",
+      "bytes": 14795
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/dict_analyzer_result.py",
+      "mode": "100644",
+      "git_blob": "c6eabd68033e8b5d09dc54bdf806f590892d6ea5",
+      "copy_git_blob": "c6eabd68033e8b5d09dc54bdf806f590892d6ea5",
+      "sha256": "380280a1564cd904b51d798bf378ab3bb0cf841362a726d77f56118131e4e869",
+      "bytes": 997
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/entity_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1b81e1431fe83689c32337038370bbe9c1e3f3e3",
+      "copy_git_blob": "1b81e1431fe83689c32337038370bbe9c1e3f3e3",
+      "sha256": "f6a1d642ec24e0a36d0f91ac5f1d216c4d023c89546785e8587b5938dce714d0",
+      "bytes": 12911
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/input_validation/__init__.py",
+      "mode": "100644",
+      "git_blob": "8a89b25d5e8e36dc18c43caab582fd3a575e6312",
+      "copy_git_blob": "8a89b25d5e8e36dc18c43caab582fd3a575e6312",
+      "sha256": "470e39a16a7b0cd6de00810d77e894fd5575e43cee408c93879e23d946852401",
+      "bytes": 692
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/input_validation/language_validation.py",
+      "mode": "100644",
+      "git_blob": "c5f01716244a51f4203d3dcccff3778166328e30",
+      "copy_git_blob": "c5f01716244a51f4203d3dcccff3778166328e30",
+      "sha256": "e47aadbd1d16ca5644f59f17ab6e7f2373ef4066b2c1b8359d8bcf8f4dfe861e",
+      "bytes": 504
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/input_validation/schemas.py",
+      "mode": "100644",
+      "git_blob": "cf9887a8ac8960caadbe22215fb63b36771c0d5a",
+      "copy_git_blob": "cf9887a8ac8960caadbe22215fb63b36771c0d5a",
+      "sha256": "304cf831ef25678c1e53d91dda683dfb985acee839d57dfcb0dd43e6e891c2b3",
+      "bytes": 5615
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/input_validation/yaml_recognizer_models.py",
+      "mode": "100644",
+      "git_blob": "cab80d12f613757e2d76b8d93bb67250086b7257",
+      "copy_git_blob": "cab80d12f613757e2d76b8d93bb67250086b7257",
+      "sha256": "f23bff37d1225bd11a0bb2f037608ced389911bb04a6e32d77c5cd5bd137c4f8",
+      "bytes": 27851
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/__init__.py",
+      "mode": "100644",
+      "git_blob": "6f148f262509e18c8e0b5eb02f581e1c4450e425",
+      "copy_git_blob": "6f148f262509e18c8e0b5eb02f581e1c4450e425",
+      "sha256": "6bfba91119276482caf66a371b159bb113b81fc5e71c758aed7b4a3770b6d488",
+      "bytes": 1674
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/azure_auth_helper.py",
+      "mode": "100644",
+      "git_blob": "e226854e94a624815304444e06395199cfbe9f14",
+      "copy_git_blob": "e226854e94a624815304444e06395199cfbe9f14",
+      "sha256": "47552b32069aa6ca137cabb79dcad880a0b4bbd616c0d7bb4efee7bc11f48b54",
+      "bytes": 3370
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/config_loader.py",
+      "mode": "100644",
+      "git_blob": "5bd46f08fafd6c608ed5f10d70bfe1b2d7627760",
+      "copy_git_blob": "5bd46f08fafd6c608ed5f10d70bfe1b2d7627760",
+      "sha256": "6e7dad1cb7e47ff83737192a8d90f357167564367d3edd0013472113f9b49704",
+      "bytes": 4242
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/entity_mapper.py",
+      "mode": "100644",
+      "git_blob": "b599073e818ec0474936769215d0515407bbc417",
+      "copy_git_blob": "b599073e818ec0474936769215d0515407bbc417",
+      "sha256": "1dda0b90c97496c5e06abda7425cf17d9ac289a2591afcc23bd51b5caeebf318",
+      "bytes": 6656
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/examples_loader.py",
+      "mode": "100644",
+      "git_blob": "72aa318c31b699e193a57069dcbbc48e6f00166e",
+      "copy_git_blob": "72aa318c31b699e193a57069dcbbc48e6f00166e",
+      "sha256": "6b5deb4e7e3b3fd1285ab56d0dacd6d042acefe236533b8593a9e48c155d4d44",
+      "bytes": 1890
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/langextract_helper.py",
+      "mode": "100644",
+      "git_blob": "25a517f1ebf0aa660ba520a3fcbd1ee93b62a327",
+      "copy_git_blob": "25a517f1ebf0aa660ba520a3fcbd1ee93b62a327",
+      "sha256": "95b65bcb5a0f4d984ed8158bb7fc2d0142fb875c3c686356a3aaa87eb7dd0939",
+      "bytes": 7123
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/llm_utils/prompt_loader.py",
+      "mode": "100644",
+      "git_blob": "83fb3e07414bc79f0e45ae77b9bf15e94664b4a1",
+      "copy_git_blob": "83fb3e07414bc79f0e45ae77b9bf15e94664b4a1",
+      "sha256": "0f277fec7a0383edad4c8d19a133b43e50d099f440f51d89d37d1007128afd65",
+      "bytes": 1966
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/lm_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b4a4a086808a2635f33fed79be5a8f94e0a4b289",
+      "copy_git_blob": "b4a4a086808a2635f33fed79be5a8f94e0a4b289",
+      "sha256": "a30b359218475a2b8b4d5dc354f89ab45b6db38673511ccc12de2c936c5ce659",
+      "bytes": 5157
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/local_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1c5153e0c135ea6fa38123bf1837637206913652",
+      "copy_git_blob": "1c5153e0c135ea6fa38123bf1837637206913652",
+      "sha256": "3d36168ff6e09eb5a0cabb2fe65628704d7cdbd42cada16f3344761835d2e843",
+      "bytes": 202
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/__init__.py",
+      "mode": "100644",
+      "git_blob": "bafb380b65465c890d319f5b84675250d008ba82",
+      "copy_git_blob": "bafb380b65465c890d319f5b84675250d008ba82",
+      "sha256": "af2af82f8506fb6457e0e7d3596ab6dd8f1ee7ad0ea94534d90f5bea4d5d0127",
+      "bytes": 800
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/device_detector.py",
+      "mode": "100644",
+      "git_blob": "d1424865cacb5551ef7c081cd157dd58e1fb55a6",
+      "copy_git_blob": "d1424865cacb5551ef7c081cd157dd58e1fb55a6",
+      "sha256": "2ec62157b3adae4ce202acd8e4d27507d348db8ec831dcb1c33ded1b75d713ae",
+      "bytes": 2963
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/ner_model_configuration.py",
+      "mode": "100644",
+      "git_blob": "3f813f015ee4cec4a746ba24400faa9f8f9791e6",
+      "copy_git_blob": "3f813f015ee4cec4a746ba24400faa9f8f9791e6",
+      "sha256": "e065c8cea84b736948d5d99f0608d80f9550c07c0c5eca6dacf852da01f2d583",
+      "bytes": 4972
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/nlp_artifacts.py",
+      "mode": "100644",
+      "git_blob": "c38c06264b1fdae291cd77ff565a2245c44a92bf",
+      "copy_git_blob": "c38c06264b1fdae291cd77ff565a2245c44a92bf",
+      "sha256": "03415581d107169dce7aa544b74f52827a3827f08a54af3ec8229c2d5ee6e978",
+      "bytes": 2805
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "0e9c6d9f87aaa18064e8427452139d5f3a759775",
+      "copy_git_blob": "0e9c6d9f87aaa18064e8427452139d5f3a759775",
+      "sha256": "f01e3026ecbc39a1b20106b507d34b0a16ca1c6a9eaf38928b48dec03e46cde9",
+      "bytes": 1736
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/nlp_engine_provider.py",
+      "mode": "100644",
+      "git_blob": "1848794c411610f640e1462be5f4a567f211b576",
+      "copy_git_blob": "1848794c411610f640e1462be5f4a567f211b576",
+      "sha256": "31a0bf39c86cc026dc9c7218de59cd839a7b8b6398a10c2977c28d40c9186ad0",
+      "bytes": 4818
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/no_op_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "cfb016143acdb7ca809e571d8af894d85132d5f2",
+      "copy_git_blob": "cfb016143acdb7ca809e571d8af894d85132d5f2",
+      "sha256": "5ac88b18edb8b20b6c1b5eebb2aac8ff2f60e1b2412b3aa936a4abad77e638cd",
+      "bytes": 6593
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/slim_spacy_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "075bb4902e2f7de7be35cab41dbe9f8c79b3ce61",
+      "copy_git_blob": "075bb4902e2f7de7be35cab41dbe9f8c79b3ce61",
+      "sha256": "d23d7ce38b6016b57a656982e2fc671bff25751014b0f16d2ed3b8556199a5d0",
+      "bytes": 10636
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/spacy_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "8ec293be751552b14c575547d2c7b69186634175",
+      "copy_git_blob": "8ec293be751552b14c575547d2c7b69186634175",
+      "sha256": "c0b57b06278c25091720f740f3f2fc51532ccc9d9644d5b598bb2580eb83a8de",
+      "bytes": 10542
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/stanza_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "7a4f306c35c9475f42d0b97b07256ebc731bd7d9",
+      "copy_git_blob": "7a4f306c35c9475f42d0b97b07256ebc731bd7d9",
+      "sha256": "d5ea06d593655b481c998b351ee4e1b7ab0705c962f899a73bd7d288647a35ad",
+      "bytes": 18598
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/nlp_engine/transformers_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "f3a12198bf255fcb8c719d59e0120f0593bcba17",
+      "copy_git_blob": "f3a12198bf255fcb8c719d59e0120f0593bcba17",
+      "sha256": "a72336c40e93598fd89f4f105a8d8daa49ac7859ce560ba5ea9701ced614ef94",
+      "bytes": 4713
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/pattern.py",
+      "mode": "100644",
+      "git_blob": "a4a3909bb4f7b6def7a87d9212ff83d705fb5634",
+      "copy_git_blob": "a4a3909bb4f7b6def7a87d9212ff83d705fb5634",
+      "sha256": "2a5880ff3ddfecc77b3106a244c13c1cd27db58c3616489e61b54d4550dd5b7c",
+      "bytes": 1845
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/pattern_recognizer.py",
+      "mode": "100644",
+      "git_blob": "eee0ee07a606fa0fe5212deeb03691ffd643819e",
+      "copy_git_blob": "eee0ee07a606fa0fe5212deeb03691ffd643819e",
+      "sha256": "38dbbb9b2a8fa9e9427cb556240fc3561cbdfa2e033e464d4360782c391c5ca2",
+      "bytes": 12193
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/__init__.py",
+      "mode": "100644",
+      "git_blob": "285a5a21d2964cd1ed2d4c124fc6933ffdcc8907",
+      "copy_git_blob": "285a5a21d2964cd1ed2d4c124fc6933ffdcc8907",
+      "sha256": "1425f0d22cf62bf46f9426cb7e3a3f76e7c1dcde1f8b5be7adbe30df3c0734d0",
+      "bytes": 12169
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/__init__.py",
+      "mode": "100644",
+      "git_blob": "cb1ffd3acc532b6622d33b1bf5f50080885c0f5b",
+      "copy_git_blob": "cb1ffd3acc532b6622d33b1bf5f50080885c0f5b",
+      "sha256": "bf8d304235b34bd95adf8371ae73d03b638e446796456506f7276b2f312a580b",
+      "bytes": 137
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/australia/__init__.py",
+      "mode": "100644",
+      "git_blob": "3821c180d3b893a113e9695cf5b8c1605b65342b",
+      "copy_git_blob": "3821c180d3b893a113e9695cf5b8c1605b65342b",
+      "sha256": "147c05c4e28238a961ef825d866d7edf77458bcecdde604745286f9269cd2963",
+      "bytes": 349
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/australia/au_abn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "413bb50aff997e16b76ef745c632e30d82e656be",
+      "copy_git_blob": "413bb50aff997e16b76ef745c632e30d82e656be",
+      "sha256": "3db5dcc1a57a4545a1bc82881730158a15da23a708274a537c391011c0d3420f",
+      "bytes": 3568
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/australia/au_acn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5c8dd680a2cb5a4e094d6eb5ed64b4d7d9c09a28",
+      "copy_git_blob": "5c8dd680a2cb5a4e094d6eb5ed64b4d7d9c09a28",
+      "sha256": "15c8b121fe1cd58fcd8c361f92c2bb8929c62c6b4c71a2c7d6f1c5bc424a06dd",
+      "bytes": 3269
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/australia/au_medicare_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ee7e881f6e0af052528855526e515f3814ef06ff",
+      "copy_git_blob": "ee7e881f6e0af052528855526e515f3814ef06ff",
+      "sha256": "383d56ab72bb9fc900b5adbb1742a31136157b9ae463461a65c7b03d5125845f",
+      "bytes": 3117
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/australia/au_tfn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "de0c887c1f233954e42baba3d90a0d457b818785",
+      "copy_git_blob": "de0c887c1f233954e42baba3d90a0d457b818785",
+      "sha256": "dc8c6efdf664f63491dbd6107c0c99beba07b3e32799d63e1b94b572902b4a94",
+      "bytes": 3237
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/canada/__init__.py",
+      "mode": "100644",
+      "git_blob": "ead2a24f7df3d4845c58dec840691b708245bfa4",
+      "copy_git_blob": "ead2a24f7df3d4845c58dec840691b708245bfa4",
+      "sha256": "bef085ad2b02ea33c3fe16995ebd3e6e643818e37c25bde62135779cf147bffa",
+      "bytes": 221
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/canada/ca_postal_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "3f1871fb72f0b9f1d112f8f8bd2f1c06a8ff3910",
+      "copy_git_blob": "3f1871fb72f0b9f1d112f8f8bd2f1c06a8ff3910",
+      "sha256": "ae10e46c2be91048e3cc037206d3e970ca0601da7c6f0e89565dae00905af2a1",
+      "bytes": 2635
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/canada/ca_sin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4e0892c77519b1ff2271742b1b1525059eaf66ab",
+      "copy_git_blob": "4e0892c77519b1ff2271742b1b1525059eaf66ab",
+      "sha256": "71bf1c2be6ee94f54cdcbfda1dc961cc3c950510264151c6ac9f2db19f2da1f8",
+      "bytes": 2829
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/finland/__init__.py",
+      "mode": "100644",
+      "git_blob": "a1ace0736ed1c5c9d132098fb3d5fac68e8a6963",
+      "copy_git_blob": "a1ace0736ed1c5c9d132098fb3d5fac68e8a6963",
+      "sha256": "ac81a31cc7f171067d830c9a9e7a082481493bdb72c91c2097b45cf120db8d9c",
+      "bytes": 175
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/finland/fi_personal_identity_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1e0bdae0f2cad1a95e632d081ab4f32f779ad1fe",
+      "copy_git_blob": "1e0bdae0f2cad1a95e632d081ab4f32f779ad1fe",
+      "sha256": "886a2ce2826da7f4ceb76c08f8436d5f2a98860ae8bc558915af30c0f3d3d729",
+      "bytes": 3733
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/__init__.py",
+      "mode": "100644",
+      "git_blob": "d5c1a6c1c39d91841f30a0870a1d0148721e60ac",
+      "copy_git_blob": "d5c1a6c1c39d91841f30a0870a1d0148721e60ac",
+      "sha256": "af387426d115b91aabebac657e22a2dc6ada30e18414730937742154d1249c2d",
+      "bytes": 44
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_bsnr_recognizer.py",
+      "mode": "100644",
+      "git_blob": "42b5358e38b82b817947d814bb814a05fc6056ae",
+      "copy_git_blob": "42b5358e38b82b817947d814bb814a05fc6056ae",
+      "sha256": "0969dfdd422c232b9ed7bef5167ff96ca0481713c6e631de5c19602c4806dae5",
+      "bytes": 5494
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_fuehrerschein_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1d65f8a4745b0e323549df9ef1f11f018889a882",
+      "copy_git_blob": "1d65f8a4745b0e323549df9ef1f11f018889a882",
+      "sha256": "0f327a362390944d0f211c855bd49d5c466744a5c5f8c70dd5a5300d72aca812",
+      "bytes": 4441
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_handelsregister_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a13501e8bad40eddae6b70db456604b009c5bcbe",
+      "copy_git_blob": "a13501e8bad40eddae6b70db456604b009c5bcbe",
+      "sha256": "3afe054a830001941d75c527039a705984a0281f14fc758ca54f3d630ff626f0",
+      "bytes": 3048
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_health_insurance_recognizer.py",
+      "mode": "100644",
+      "git_blob": "7ca16a0e3f576e3599434cf4b8613cfccad4da95",
+      "copy_git_blob": "7ca16a0e3f576e3599434cf4b8613cfccad4da95",
+      "sha256": "dbbe0f65d8506dec2d83bb1cb7f2840bfc54969d2c262c9257c780f5da35ae2d",
+      "bytes": 4984
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_id_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "6fc185332e756c6d7ede60759c0fb70e040c57df",
+      "copy_git_blob": "6fc185332e756c6d7ede60759c0fb70e040c57df",
+      "sha256": "e39e67df9068ed39a32bea568c5d0001caec0b662353d3b49cf01bc7009adf15",
+      "bytes": 4221
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_kfz_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b58e3906c30125e09bf531dda3abcdd1daa9b7d9",
+      "copy_git_blob": "b58e3906c30125e09bf531dda3abcdd1daa9b7d9",
+      "sha256": "af24af2eec953222794a4a653f98be151ec4f5609fc5bc29df2c5b9fb58552e3",
+      "bytes": 3714
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_lanr_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d77568311f87317f9dfe9dd3578593dc466721af",
+      "copy_git_blob": "d77568311f87317f9dfe9dd3578593dc466721af",
+      "sha256": "a0112b1c74806b6308c503e2b72379451d2073e7439d322c58c33103bc14b105",
+      "bytes": 4284
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0c8d6fedaee24bec26aea41edcebc02cba297831",
+      "copy_git_blob": "0c8d6fedaee24bec26aea41edcebc02cba297831",
+      "sha256": "01ec35d54d442da4d58d6397b772f4deffde4eec301d768c77007505624d0c89",
+      "bytes": 4822
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_plz_recognizer.py",
+      "mode": "100644",
+      "git_blob": "2bcc14307fd7519acd78d91fbbca16c5890ac01b",
+      "copy_git_blob": "2bcc14307fd7519acd78d91fbbca16c5890ac01b",
+      "sha256": "97a99cc81993674c796f1febc4087c5a64c5fdbb94c429280fb6c74f611ebf34",
+      "bytes": 3218
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_social_security_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0e01dc8e4348d8ef5a8b8080b0c724fc12ba292f",
+      "copy_git_blob": "0e01dc8e4348d8ef5a8b8080b0c724fc12ba292f",
+      "sha256": "d78c97bac10bf50ee280183afae75bf4e25ad5b5ea07d77eb967e633ab2d6133",
+      "bytes": 6511
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_tax_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1966bcc31fa7c8d273fa4ec75833c76939be27d1",
+      "copy_git_blob": "1966bcc31fa7c8d273fa4ec75833c76939be27d1",
+      "sha256": "d45bb0dffcf179769a9d09acf9a796e605abdf543973ad9dc5b725035b7c5215",
+      "bytes": 3648
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_tax_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c17b9901ffa56447476ec63da5763b6c75b1e27e",
+      "copy_git_blob": "c17b9901ffa56447476ec63da5763b6c75b1e27e",
+      "sha256": "393d10e5a087c003e5a2895c9a0a62ea6395cc2e3704e151c71878b9aee2313a",
+      "bytes": 2900
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/germany/de_vat_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "8d29ef37406176cad197771d4ca507b77b4b85ca",
+      "copy_git_blob": "8d29ef37406176cad197771d4ca507b77b4b85ca",
+      "sha256": "8c313058e1cfd7b2316fc1c972cd6d87f28fcaf594f66a0f31f7b8364ca69f4d",
+      "bytes": 7393
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/__init__.py",
+      "mode": "100644",
+      "git_blob": "7cec47f7e4fecad1c8665004e6b6de75b7a894d6",
+      "copy_git_blob": "7cec47f7e4fecad1c8665004e6b6de75b7a894d6",
+      "sha256": "b4aedf40b4a3eb27372e3d3aea328b45698ca24e171c1c86b5643c4be2018a3b",
+      "bytes": 558
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_aadhaar_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e74ed342a47244e7a3b30e68a90dc8b4cbcddc3b",
+      "copy_git_blob": "e74ed342a47244e7a3b30e68a90dc8b4cbcddc3b",
+      "sha256": "1a5f0f0a63d9a53b99d3f4798c365a6a7e6afd245513ba8763d2ff7b1fd74b57",
+      "bytes": 4656
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_gstin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ef965c9322c1edc4e3d3904b61974e9f6bbe549a",
+      "copy_git_blob": "ef965c9322c1edc4e3d3904b61974e9f6bbe549a",
+      "sha256": "887e585356129f1abc49a5a8be1f332d2311f557867aa08c2eaa1cea0324b0b4",
+      "bytes": 5582
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_pan_recognizer.py",
+      "mode": "100644",
+      "git_blob": "700b0bd1ed25e0e85d0bfc3dc1e0fcc049f9df4b",
+      "copy_git_blob": "700b0bd1ed25e0e85d0bfc3dc1e0fcc049f9df4b",
+      "sha256": "91e2a3d6eb6c533c200464438fee4435474531cb480ef0e80eb93a52c5efb90b",
+      "bytes": 2457
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ef543facd20dd69eb87e8a8e4fa785d5e844c052",
+      "copy_git_blob": "ef543facd20dd69eb87e8a8e4fa785d5e844c052",
+      "sha256": "c1152984b3c12eddaadc3fedd92c5e3d262004b71521eb2946a43466d71195d1",
+      "bytes": 1489
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d4e584c6225faa62b7d4583ab9f78c8d9371e6b9",
+      "copy_git_blob": "d4e584c6225faa62b7d4583ab9f78c8d9371e6b9",
+      "sha256": "9d8ca791e81de04773a27bdc7dee5be8a9004765e0357ef7400391c7bedb3d0d",
+      "bytes": 18681
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/india/in_voter_recognizer.py",
+      "mode": "100644",
+      "git_blob": "368f2045e795790e093f9df6989658f332391381",
+      "copy_git_blob": "368f2045e795790e093f9df6989658f332391381",
+      "sha256": "c78ee919e83ba8a05e0f9064e060bd39b4e05fcab3d112cade511ce37d8b68a2",
+      "bytes": 1711
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/__init__.py",
+      "mode": "100644",
+      "git_blob": "377ea19fe3c0aacbeb5bbf0060576b936e36181b",
+      "copy_git_blob": "377ea19fe3c0aacbeb5bbf0060576b936e36181b",
+      "sha256": "c6f21ad1a64afe0290a5c11843d458c2208f426e41863d66954f513354f59fed",
+      "bytes": 498
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/it_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "00b7724135b4f4a02d8cef7c8bee55837f98a495",
+      "copy_git_blob": "00b7724135b4f4a02d8cef7c8bee55837f98a495",
+      "sha256": "ae5e470e9225681e633f699d7e1c9817aafba9a2a4a65f09f3eef19f1b02cbac",
+      "bytes": 1429
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/it_fiscal_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d02cac813c65d3b1e2b8718f05b7726de95715e4",
+      "copy_git_blob": "d02cac813c65d3b1e2b8718f05b7726de95715e4",
+      "sha256": "608e5ec7ab408830e6860a0debc796ac36ae67f1e4dc91e7cbb0d1bf62517337",
+      "bytes": 4889
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/it_identity_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e59743164a41197a90cce1cdf3341f445cd6d3c6",
+      "copy_git_blob": "e59743164a41197a90cce1cdf3341f445cd6d3c6",
+      "sha256": "ff15069a366e19bb416c91dd5e3bf93edd7ae43f217279989960f4f861f0cfd0",
+      "bytes": 2407
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/it_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d7cd99f5732a1371334326bcb016624ee1f2b4e0",
+      "copy_git_blob": "d7cd99f5732a1371334326bcb016624ee1f2b4e0",
+      "sha256": "f888904dc8bf2bb5f4f4375168e27db04b042f389641d41f2afe18a7891fec24",
+      "bytes": 1443
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/italy/it_vat_code.py",
+      "mode": "100644",
+      "git_blob": "96d0fd9f76036807c760790b6ffb412d9741b395",
+      "copy_git_blob": "96d0fd9f76036807c760790b6ffb412d9741b395",
+      "sha256": "288151abfdb40e43c110f04c49794abddbd7501e421d1117b885982fa945f4a8",
+      "bytes": 3065
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/__init__.py",
+      "mode": "100644",
+      "git_blob": "9b1e8433485ee2e1a5fee8379ca0a3bb98dc9a7e",
+      "copy_git_blob": "9b1e8433485ee2e1a5fee8379ca0a3bb98dc9a7e",
+      "sha256": "9da30dc2f7040191172ce3e7838dba98fc5186e4a8938fe854a51134719ad200",
+      "bytes": 507
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/kr_brn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5a7f40f02ab2bfc69f31864642a5064edf39f52d",
+      "copy_git_blob": "5a7f40f02ab2bfc69f31864642a5064edf39f52d",
+      "sha256": "bf03065aa4e35e7ed094a6cefffab188abacdd1e9985414fa54b07ab97bf61bb",
+      "bytes": 4295
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/kr_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "7ba14d222702cb7464efe9304639816e0e309169",
+      "copy_git_blob": "7ba14d222702cb7464efe9304639816e0e309169",
+      "sha256": "06f423665d9c51abe6b9a7747aa29ea5f80b74a1f59536ed245c51512b9d1418",
+      "bytes": 3184
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/kr_frn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "96744834ed3cbe23b8084d841cc56a472ab847a9",
+      "copy_git_blob": "96744834ed3cbe23b8084d841cc56a472ab847a9",
+      "sha256": "5150882b794ba6b3af350ddbdb9c069244f0248da1f0277ce78540215a41250f",
+      "bytes": 3120
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/kr_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f8c6db16101c7bc6e0ff7b18cc85d4bc177084d8",
+      "copy_git_blob": "f8c6db16101c7bc6e0ff7b18cc85d4bc177084d8",
+      "sha256": "d9b71a5ffd733e2fad4812f5abe617f99c09800c94aa138f924fa093cd8db9a7",
+      "bytes": 2080
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/korea/kr_rrn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "77ebab08d16bd6314a72cc49caeb88eb492c70f5",
+      "copy_git_blob": "77ebab08d16bd6314a72cc49caeb88eb492c70f5",
+      "sha256": "6edd38b849823b8a01ae46d748dd74cd08e9899b6019bf38c899803d9b2c77f4",
+      "bytes": 5032
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/nigeria/__init__.py",
+      "mode": "100644",
+      "git_blob": "711e94eff736441ddaea9c3fcb5e1090504e6bea",
+      "copy_git_blob": "711e94eff736441ddaea9c3fcb5e1090504e6bea",
+      "sha256": "e8cad7caf5beed17bba157ed5f16783dd9723fd56385c08a1ea3f058022986d5",
+      "bytes": 241
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/nigeria/ng_nin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9176d2a4dc2a4d9afb8d521b6dc08a069edc8193",
+      "copy_git_blob": "9176d2a4dc2a4d9afb8d521b6dc08a069edc8193",
+      "sha256": "c96b2d4353f7b3db09a7c67f96b8be00459d5b07b8b721a7cfbb36001b26a24a",
+      "bytes": 3589
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/nigeria/ng_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "bb867940b615d7fef0ad3655eb615a610318fb33",
+      "copy_git_blob": "bb867940b615d7fef0ad3655eb615a610318fb33",
+      "sha256": "1f25835cf6d5f2b2b862b5ec53c12d2c81446c581db648ffcbb324f2590cd09b",
+      "bytes": 1829
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/philippines/__init__.py",
+      "mode": "100644",
+      "git_blob": "481c2acddcb764f5345e83153d87909d30faef9d",
+      "copy_git_blob": "481c2acddcb764f5345e83153d87909d30faef9d",
+      "sha256": "af0c80e4de16d50b31552c9305b78c38dd0396ecb5aed10c51937efabc8c6966",
+      "bytes": 307
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/philippines/ph_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "47d7ab25b161bd123220080647fece6b7617e144",
+      "copy_git_blob": "47d7ab25b161bd123220080647fece6b7617e144",
+      "sha256": "be718d120b15381adc3e0a610b522af58702e82f39d7466fff8e6ec0d7c2a754",
+      "bytes": 2247
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/philippines/ph_tin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e85869295e1e41fb16daa2402bc6ce66d34dee3d",
+      "copy_git_blob": "e85869295e1e41fb16daa2402bc6ce66d34dee3d",
+      "sha256": "235d28b7c242b2c9b7bb354f0e9ea0b518156d1b8d5421a78a60e4c696ecc2ad",
+      "bytes": 3534
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/philippines/ph_umid_recognizer.py",
+      "mode": "100644",
+      "git_blob": "381b2875fcb5cb25b979513535397b12fd246552",
+      "copy_git_blob": "381b2875fcb5cb25b979513535397b12fd246552",
+      "sha256": "4f3aa340bdd5cc18e92153eb95149023528e46655c5300fb07e0936cb24fbae9",
+      "bytes": 1514
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/poland/__init__.py",
+      "mode": "100644",
+      "git_blob": "ef571c0396c15ac71840144798616e1863ee5fd1",
+      "copy_git_blob": "ef571c0396c15ac71840144798616e1863ee5fd1",
+      "sha256": "88c9c2006a82395937c00ca0ab400eaf2adf794c7b81ba154234d89ef31c2408",
+      "bytes": 127
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/poland/pl_pesel_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ec2928bab5105117bb6c39220f5f10de947ff9c1",
+      "copy_git_blob": "ec2928bab5105117bb6c39220f5f10de947ff9c1",
+      "sha256": "a46979b15fe6c46112920ee6949f606f22d4c6464c4f6260b70c3f356d53db2b",
+      "bytes": 1935
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/singapore/__init__.py",
+      "mode": "100644",
+      "git_blob": "564995714a31144012d3c16c5c1489dff72a2420",
+      "copy_git_blob": "564995714a31144012d3c16c5c1489dff72a2420",
+      "sha256": "0d362ec0f9ea84bdf14434c121ada6a4718381e1e8a965710d1b307847d37fc8",
+      "bytes": 202
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/singapore/sg_fin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f8e030fcddb911cbd0cb4f233339c79cf3a51a79",
+      "copy_git_blob": "f8e030fcddb911cbd0cb4f233339c79cf3a51a79",
+      "sha256": "960acf01d0b089eafefdececd2361e6983430c97a47c38d0f1e2c38a07fbf31c",
+      "bytes": 1494
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/singapore/sg_uen_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b4a3710541943aa44389e2475e739a292de5bad0",
+      "copy_git_blob": "b4a3710541943aa44389e2475e739a292de5bad0",
+      "sha256": "da6632c7ac8cce60765851df7143840b01f07bee75fbbc4d5fa1f4f2b2cc26b4",
+      "bytes": 5802
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/__init__.py",
+      "mode": "100644",
+      "git_blob": "f88ebd4d4dba680e4f942094eb7bbac79d3da250",
+      "copy_git_blob": "f88ebd4d4dba680e4f942094eb7bbac79d3da250",
+      "sha256": "17060f517be4f480349cf322aabe9f7e0dc0ceee8b70267bd1596c123eb98cb5",
+      "bytes": 1043
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_company_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a81eab5d3517ddf4ee79fcca93db7565cf903a8b",
+      "copy_git_blob": "a81eab5d3517ddf4ee79fcca93db7565cf903a8b",
+      "sha256": "04b5234ac66ac30bafba383b02095076c055e7e3acb68c07d133f74191f0f0be",
+      "bytes": 3656
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "015574cb79c63e965ac04130282e41de5f40b038",
+      "copy_git_blob": "015574cb79c63e965ac04130282e41de5f40b038",
+      "sha256": "2add7dca96681646045a33d622635df3ac75f99dafd03261c50b2f87568c965c",
+      "bytes": 2224
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_id_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "324febc6555eb9d7695f494c01b6c3b9d3ca13a1",
+      "copy_git_blob": "324febc6555eb9d7695f494c01b6c3b9d3ca13a1",
+      "sha256": "9ac1125d9967332495e128f449530906f37c2ef507f032f9bde6296ce69115e0",
+      "bytes": 3974
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_income_tax_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1015a9c161df68dcec37cd30a08e44bca54fece0",
+      "copy_git_blob": "1015a9c161df68dcec37cd30a08e44bca54fece0",
+      "sha256": "a0eeeb2e917b861c49b6bc7af7dc8ec8ad66c896a0dd36585b01f8f90b831058",
+      "bytes": 2148
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_license_plate_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1ce30be3e2d4ef2661cc01d52b344e9bd6804d95",
+      "copy_git_blob": "1ce30be3e2d4ef2661cc01d52b344e9bd6804d95",
+      "sha256": "6f5bc4ae943edfb76ac25178a54c5e56ff544941b557f60d0038c7454ca36663",
+      "bytes": 3305
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "6151423273808c14df3a09ba1162321da224b328",
+      "copy_git_blob": "6151423273808c14df3a09ba1162321da224b328",
+      "sha256": "c72325adad4d38be9debbc17254af3fa0ed21fcee84a99e0962b64282bf3fc4c",
+      "bytes": 2003
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_phone_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "bdc16f158d81d0cf745a91907857cd8359781811",
+      "copy_git_blob": "bdc16f158d81d0cf745a91907857cd8359781811",
+      "sha256": "58a7e81b041057eb3c5609f78a26e52a420043bfb694cb18b6f764b9d07a4e4a",
+      "bytes": 6500
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_traffic_register_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4a5e8f271693ef453df5090daabed3a4d930ceb7",
+      "copy_git_blob": "4a5e8f271693ef453df5090daabed3a4d930ceb7",
+      "sha256": "48d241787af4cf95477857e8dcd49b9742e9fa39b45bada20b107ea232c263ef",
+      "bytes": 2167
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/south_africa/za_vat_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "98ff9af3fb72f274a09734fbc2ce8b698f8b3876",
+      "copy_git_blob": "98ff9af3fb72f274a09734fbc2ce8b698f8b3876",
+      "sha256": "43465b5802f60bdf036a4d78bf268bdaa2ccbe30a488920882b7cf55a2f79863",
+      "bytes": 1864
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/spain/__init__.py",
+      "mode": "100644",
+      "git_blob": "973fa06ec1fab0f1e9dd4c41ca44e209bbba85c7",
+      "copy_git_blob": "973fa06ec1fab0f1e9dd4c41ca44e209bbba85c7",
+      "sha256": "f01ba195a2ac10479d907be716241f8a78d3f6d3f56667731c7a7702a3014626",
+      "bytes": 283
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/spain/es_nie_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a88cb15ea0440e579e771218599e8709262e0fde",
+      "copy_git_blob": "a88cb15ea0440e579e771218599e8709262e0fde",
+      "sha256": "d182f4bf5fc6c6b3d7cae47a5804c0fd31744c40919c4533157f945d933fe556",
+      "bytes": 2753
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/spain/es_nif_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ce364bb35b2005782e34d9fe77fd845135d50340",
+      "copy_git_blob": "ce364bb35b2005782e34d9fe77fd845135d50340",
+      "sha256": "48b2691585f35f90529f16254c32808974128999683d2509ec4421acb551b815",
+      "bytes": 2138
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/spain/es_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "29eb929e0d0f7250a4deae07d4d574e8ac23c2ca",
+      "copy_git_blob": "29eb929e0d0f7250a4deae07d4d574e8ac23c2ca",
+      "sha256": "3fdab383e154978877e52c787633a69961c004472faa94ac0cc6c97f9055bdf8",
+      "bytes": 1557
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/sweden/__init__.py",
+      "mode": "100644",
+      "git_blob": "10c202673b59098fd1322898118a836687d3258c",
+      "copy_git_blob": "10c202673b59098fd1322898118a836687d3258c",
+      "sha256": "c1fe5a1931138bd5756a89ed24a755ba492a128828294f179180b3076aaefbad",
+      "bytes": 266
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/sweden/se_organisationsnummer_recognizer.py",
+      "mode": "100644",
+      "git_blob": "36a26e2ef40672e2170d2a8b4b4933ba86c7499d",
+      "copy_git_blob": "36a26e2ef40672e2170d2a8b4b4933ba86c7499d",
+      "sha256": "54876e6c9b9541bfe6d1aaae42f32ade771143453f4a656ba50b73961653c8a5",
+      "bytes": 2946
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/sweden/se_personnummer_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a8e207309611da661a1fe513fee565b6a9bc4850",
+      "copy_git_blob": "a8e207309611da661a1fe513fee565b6a9bc4850",
+      "sha256": "9b23370df42f46d72ea4e837e7fa87ec57705cb31b8bbc1df27ba19f90e8513a",
+      "bytes": 4671
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/thai/__init__.py",
+      "mode": "100644",
+      "git_blob": "dab6f25610df5dab904bf9fd59381c37158b1beb",
+      "copy_git_blob": "dab6f25610df5dab904bf9fd59381c37158b1beb",
+      "sha256": "2420bb97d9e8f59f8de7e91dfe23d033f6a464c2f707762ea6994496c91c3899",
+      "bytes": 122
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/thai/th_tnin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "368632cc5e60691b98c60f6bdd3157ca3aaaacd9",
+      "copy_git_blob": "368632cc5e60691b98c60f6bdd3157ca3aaaacd9",
+      "sha256": "7975429d6a9f2f18615d85713c6122e312e777c5e961d22798cb895a8eb30e5a",
+      "bytes": 5108
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/turkey/__init__.py",
+      "mode": "100644",
+      "git_blob": "47327d3a6ad896a42e9fbadcd64723aaf149dffb",
+      "copy_git_blob": "47327d3a6ad896a42e9fbadcd64723aaf149dffb",
+      "sha256": "00ff79c86c4e1b405c92feb50d107cab98c43640d70627b700c352e33f3ed4ef",
+      "bytes": 241
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/turkey/tr_license_plate_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0eafdcf2a01556482ddebfe5c94a229a32ba27c9",
+      "copy_git_blob": "0eafdcf2a01556482ddebfe5c94a229a32ba27c9",
+      "sha256": "1d791d4062d91ebd3e0500c1865e75c72e98a2d0e7ba671d5963a41ec871763d",
+      "bytes": 3294
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/turkey/tr_national_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "7e229bc12d9d3fb4ba5c31f58d245b2813b480ee",
+      "copy_git_blob": "7e229bc12d9d3fb4ba5c31f58d245b2813b480ee",
+      "sha256": "2f6dd46d91487a26242f7db09f5271a0beaa3e09a6f9f2d858e3e848f82bc104",
+      "bytes": 3612
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/__init__.py",
+      "mode": "100644",
+      "git_blob": "9e8439ffded06f750789f39bf7dfdc112adcd205",
+      "copy_git_blob": "9e8439ffded06f750789f39bf7dfdc112adcd205",
+      "sha256": "6d04c6d59de8397cca7e9775a0be0e304be5b38c8ba2aac4d388cc3a4ed328a8",
+      "bytes": 587
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_driving_licence_recognizer.py",
+      "mode": "100644",
+      "git_blob": "37827ca0eec4690788d36c81a40d60ff2fc66773",
+      "copy_git_blob": "37827ca0eec4690788d36c81a40d60ff2fc66773",
+      "sha256": "19c48731f4231efa2701ccf5eab6e4fba26c48e93e7d8852a584cbf75e5cc44f",
+      "bytes": 3100
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_nhs_recognizer.py",
+      "mode": "100644",
+      "git_blob": "80b81e9470bafc0198fbfc18667d205fdc649fdc",
+      "copy_git_blob": "80b81e9470bafc0198fbfc18667d205fdc649fdc",
+      "sha256": "75b1cbd7142b0e4ba7a37bc62d391c17d4ffce05d9b5049eb48cd5ee393b2b15",
+      "bytes": 2500
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_nino_recognizer.py",
+      "mode": "100644",
+      "git_blob": "aa0ccbdfe26823586dc3bd881b48f58474021a05",
+      "copy_git_blob": "aa0ccbdfe26823586dc3bd881b48f58474021a05",
+      "sha256": "acceab66d70ebe0ce33f981658f39640e35eb955d2eb7216b0d94ae7b595c431",
+      "bytes": 1461
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "60b1ccf645048346b53cc82dc574150c813c021b",
+      "copy_git_blob": "60b1ccf645048346b53cc82dc574150c813c021b",
+      "sha256": "e78da2c179b08e2ee65d2e20c68b933dfda3144182b70f4d1765e9d11ece57bd",
+      "bytes": 1577
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_postcode_recognizer.py",
+      "mode": "100644",
+      "git_blob": "80d0192896b6d1dee026136a06ebfe06e476522f",
+      "copy_git_blob": "80d0192896b6d1dee026136a06ebfe06e476522f",
+      "sha256": "038d665d522d1c7cc90e151e8184b94390b3ff2766a838eda9ba0e5f59290a5d",
+      "bytes": 2007
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/uk/uk_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5f63852ec7ce1d7d56cd07ca817919df7d8ec7ac",
+      "copy_git_blob": "5f63852ec7ce1d7d56cd07ca817919df7d8ec7ac",
+      "sha256": "598dc3341704bcf15dbf5b92de11bdc3eff5a87a6137f039d083649bdad68e13",
+      "bytes": 3693
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/__init__.py",
+      "mode": "100644",
+      "git_blob": "df013a80d0c40a2a219ff549184e627ca9728506",
+      "copy_git_blob": "df013a80d0c40a2a219ff549184e627ca9728506",
+      "sha256": "37067eb48a62ec766e1836f09001841439c8ebec4764be82b9f4a155b16fa97e",
+      "bytes": 1308
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/aba_routing_recognizer.py",
+      "mode": "100644",
+      "git_blob": "bf4164ee5e01350a85ad93e96be821d7fb3fc959",
+      "copy_git_blob": "bf4164ee5e01350a85ad93e96be821d7fb3fc959",
+      "sha256": "5de31a89b19191cc608ea515e2efa76e567bcb782a5f58dcbebcbf8d8c5646a9",
+      "bytes": 2484
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/medical_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "92abf6ae0ecb07387d23bd095aa5a752bcbf94ab",
+      "copy_git_blob": "92abf6ae0ecb07387d23bd095aa5a752bcbf94ab",
+      "sha256": "aa532dbc1cab38eec613f0eedd444c00d6c0f4b946799a5e9a793657188f9753",
+      "bytes": 2649
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_bank_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5efc648ccf16a9aadad3363dd060fa83baebf4fc",
+      "copy_git_blob": "5efc648ccf16a9aadad3363dd060fa83baebf4fc",
+      "sha256": "257713e9ddb376a5da4178e0a346e1c1becf96e53ff2b34a86fb247a8dd257fd",
+      "bytes": 1481
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "62c98a5ad575e4bfbbad3d3d2d449e98c68e33d8",
+      "copy_git_blob": "62c98a5ad575e4bfbbad3d3d2d449e98c68e33d8",
+      "sha256": "a7a0018090247b796559971094247b911af228de3265db2cc4813c8df5ae43de",
+      "bytes": 2398
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_health_insurance_member_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "081424b3b1750cb097631c8ba8d51ad229db53ca",
+      "copy_git_blob": "081424b3b1750cb097631c8ba8d51ad229db53ca",
+      "sha256": "462e8ed435addb89b77be197b48d60e80f0f25eaff9ef84483d2a0e04af8ed37",
+      "bytes": 2603
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_healthcare_admin_recognizers.py",
+      "mode": "100644",
+      "git_blob": "d1f67e05682ef85f0ac1fc1a7fd67c8e01509bf9",
+      "copy_git_blob": "d1f67e05682ef85f0ac1fc1a7fd67c8e01509bf9",
+      "sha256": "949e9a1f83f689acbf15b0da95e50f11efaabef8fb8fb2ffa36705a790f51577",
+      "bytes": 9223
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_itin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "429d6091e52de1323db36b602542a41a8e6a58ad",
+      "copy_git_blob": "429d6091e52de1323db36b602542a41a8e6a58ad",
+      "sha256": "a233c979070fe43188abe8c677e78c1adff360b80513d04b42f2aeb5de0c531f",
+      "bytes": 1746
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_mbi_recognizer.py",
+      "mode": "100644",
+      "git_blob": "718a2f89f7d508efc20d0fd4b77995d51f05144f",
+      "copy_git_blob": "718a2f89f7d508efc20d0fd4b77995d51f05144f",
+      "sha256": "2ad8843353ab1079b9e997353fdbb7588889f37e34da1e10abdac6617b74fd26",
+      "bytes": 3234
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_npi_recognizer.py",
+      "mode": "100644",
+      "git_blob": "73af6c269d7bfd6df512e7d5b94a5a74aedfe673",
+      "copy_git_blob": "73af6c269d7bfd6df512e7d5b94a5a74aedfe673",
+      "sha256": "fd8f7315e7749e1798e237c865ac633c1c90fa59cb5fc3ce2be89325dc4a52fc",
+      "bytes": 4216
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "320eacd8adb415494ca5698fe6b7de8b35b07b15",
+      "copy_git_blob": "320eacd8adb415494ca5698fe6b7de8b35b07b15",
+      "sha256": "8914e153e9133284de1d97e64e6943160e18e9fbf9e625a3e012aaeb7a259377",
+      "bytes": 1435
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_ssn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c3e60f76c4c7d92c468f5bd899db74b1ef37d1e9",
+      "copy_git_blob": "c3e60f76c4c7d92c468f5bd899db74b1ef37d1e9",
+      "sha256": "e9227abeecf9221a0cad0c8b01785485c936ccf759ded80b6cc4f2eb8d0910fa",
+      "bytes": 3106
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/__init__.py",
+      "mode": "100644",
+      "git_blob": "a8b23a3606fa9079340d5bbc951b4559ee39aced",
+      "copy_git_blob": "a8b23a3606fa9079340d5bbc951b4559ee39aced",
+      "sha256": "52d4fbc254103d8dd597fa0d1b7c062d50bf7545c501b34367b85b4e3222334f",
+      "bytes": 678
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/credit_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "912bf8d197ac2ff600f4018dc7a8a08817122315",
+      "copy_git_blob": "912bf8d197ac2ff600f4018dc7a8a08817122315",
+      "sha256": "762612c51d56339e6bd39362402a330d46d48c0aabe4db100012cd03fcb0e562",
+      "bytes": 2718
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/crypto_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b6c3eeece3254b72eb69b47f324f68d4c61c5bcb",
+      "copy_git_blob": "b6c3eeece3254b72eb69b47f324f68d4c61c5bcb",
+      "sha256": "07f5c4b4c85ef248fbe3a9cd3ad2595119c2e907c0e497105d7e6488800f6419",
+      "bytes": 5148
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/date_recognizer.py",
+      "mode": "100644",
+      "git_blob": "8f9cba4b2d069475787570a73baaa654a448e5ec",
+      "copy_git_blob": "8f9cba4b2d069475787570a73baaa654a448e5ec",
+      "sha256": "2aeca2d46fea8d43fc77c2e5d45d7a1331acff9a50cadce95cebd21eb4db1057",
+      "bytes": 3475
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/email_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f893e7fcfc77ff1292675266308f6a2fcdfc76eb",
+      "copy_git_blob": "f893e7fcfc77ff1292675266308f6a2fcdfc76eb",
+      "sha256": "1d4ff93e067426c9db105100f8343d7bcb3cc9a8115ce2511782e7858300f59d",
+      "bytes": 1904
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/iban_patterns.py",
+      "mode": "100644",
+      "git_blob": "956ef3e29ef76fcf2d49e034f76861836b23a60a",
+      "copy_git_blob": "956ef3e29ef76fcf2d49e034f76861836b23a60a",
+      "sha256": "9762357625953cc7a8aa17c86871a884f428da9921358aa074058641e906080a",
+      "bytes": 9086
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/iban_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ec831114b3d983793a1c90b015d4a9050b0e1c4a",
+      "copy_git_blob": "ec831114b3d983793a1c90b015d4a9050b0e1c4a",
+      "sha256": "287013043056c19522f0a08ce6f6464fd7909c2516286060811d3c714113f2d3",
+      "bytes": 9415
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/ip_recognizer.py",
+      "mode": "100644",
+      "git_blob": "279e94e43a0f7e1d2adc71da99b135e358d19bed",
+      "copy_git_blob": "279e94e43a0f7e1d2adc71da99b135e358d19bed",
+      "sha256": "4d46aa9623114c3ee147c7f2f11455caf4911d42059e2583d46494574efe65e5",
+      "bytes": 3072
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/mac_recognizer.py",
+      "mode": "100644",
+      "git_blob": "de8e422740e34b8ec6acf60d54004c817770dc4f",
+      "copy_git_blob": "de8e422740e34b8ec6acf60d54004c817770dc4f",
+      "sha256": "c9caea6308afcbf9e8588f01af8a65371e90c4178aaa4db27fb9bed7ada7714c",
+      "bytes": 2374
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/phone_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1df82a8e0e66a3213b44c6e453b4ed952f8339f1",
+      "copy_git_blob": "1df82a8e0e66a3213b44c6e453b4ed952f8339f1",
+      "sha256": "d8bef4065297fb3661ca224813a16fb118a9d7f2c3c282231eb93ab91426c4b0",
+      "bytes": 4026
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/url_recognizer.py",
+      "mode": "100644",
+      "git_blob": "310fa78d9017ce4a20162f3e0962a29a89d29455",
+      "copy_git_blob": "310fa78d9017ce4a20162f3e0962a29a89d29455",
+      "sha256": "46b17361e0d8a683a106cb977098b8210b492f357be1c79a3db93127a999c5ee",
+      "bytes": 8000
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/uuid_recognizer.py",
+      "mode": "100644",
+      "git_blob": "00b48f9b4e6082e3fcb209b96ec88115cf4b1ca6",
+      "copy_git_blob": "00b48f9b4e6082e3fcb209b96ec88115cf4b1ca6",
+      "sha256": "a61dd777f510408a7a1de8c7a3aa7b98b4e94335ffe5dad120181d1e6b4c753b",
+      "bytes": 2822
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/ner/__init__.py",
+      "mode": "100644",
+      "git_blob": "0d38338ce1a9bc9ce5e438f3fe5b31c5e57e5b7f",
+      "copy_git_blob": "0d38338ce1a9bc9ce5e438f3fe5b31c5e57e5b7f",
+      "sha256": "ce6593a1f72d0a6c11035a52bb3a87c1808b11b1370a9acc201879ea02a83575",
+      "bytes": 307
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/ner/gliner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "21d46ac68880ccffc9a8092786e1a07edbb17c25",
+      "copy_git_blob": "21d46ac68880ccffc9a8092786e1a07edbb17c25",
+      "sha256": "b3ac14c31c9db8b7acae677ba3521623f66a8cb2767eb5f6b34c55aa791232ef",
+      "bytes": 9195
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/ner/huggingface_ner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f91fcb6473c4efbfa5f4d6ec2a55bd6bc372ebe5",
+      "copy_git_blob": "f91fcb6473c4efbfa5f4d6ec2a55bd6bc372ebe5",
+      "sha256": "b061c7f4263582e6f31b2c7c66f4e75ee90b5a724d1d33106d9777b5356dbc1c",
+      "bytes": 17028
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/ner/medical_ner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "240d39fe50f838fc6cf80dbcd382c11ef826cc82",
+      "copy_git_blob": "240d39fe50f838fc6cf80dbcd382c11ef826cc82",
+      "sha256": "b2dd45b393212c74407c6c7acb9e34d509a6c58f3b199e3ff0ce568e6419d285",
+      "bytes": 2732
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/nlp_engine_recognizers/__init__.py",
+      "mode": "100644",
+      "git_blob": "42b395e74e7a221636425f0755590a0e0fde3644",
+      "copy_git_blob": "42b395e74e7a221636425f0755590a0e0fde3644",
+      "sha256": "09eea46dd8ff83988cb6bb35d45372661871588bbd4ee72c65a30038e5f7aef4",
+      "bytes": 285
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/nlp_engine_recognizers/spacy_recognizer.py",
+      "mode": "100644",
+      "git_blob": "772bb43f06b1769b029d50e4884a02d9d17d189d",
+      "copy_git_blob": "772bb43f06b1769b029d50e4884a02d9d17d189d",
+      "sha256": "f5fd4400927278350af7e8d3fcb3e4fa9924590ec00f4eb71ebd19fde83a0564",
+      "bytes": 4883
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/nlp_engine_recognizers/stanza_recognizer.py",
+      "mode": "100644",
+      "git_blob": "889df4541ce7288a9eac13016995e13d83fae6ca",
+      "copy_git_blob": "889df4541ce7288a9eac13016995e13d83fae6ca",
+      "sha256": "bec8ee2772b73f4fcd5f596415fed99c8d0b80ce2d3835d36e4cd9ad62fe047d",
+      "bytes": 640
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/nlp_engine_recognizers/transformers_recognizer.py",
+      "mode": "100644",
+      "git_blob": "643d7b4ad64e42ff6c032be3bfa0717936146af3",
+      "copy_git_blob": "643d7b4ad64e42ff6c032be3bfa0717936146af3",
+      "sha256": "a07e8d51a85f3a14dba4d5da35a2a6d0a02796678554f4d42b63ed4037d1b662",
+      "bytes": 1069
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/__init__.py",
+      "mode": "100644",
+      "git_blob": "e6a93c3296b58482c4fb87c9c8063ab637137889",
+      "copy_git_blob": "e6a93c3296b58482c4fb87c9c8063ab637137889",
+      "sha256": "9ca30ff7af5ce5f6f5a1d379d8dca57cf4997b797f8f288273a4ad9e64d2792e",
+      "bytes": 442
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/ahds_recognizer.py",
+      "mode": "100644",
+      "git_blob": "88477610aa8a7d5a54faa4cf57494d47e7ddde6e",
+      "copy_git_blob": "88477610aa8a7d5a54faa4cf57494d47e7ddde6e",
+      "sha256": "53c8f58588d5f884f800400e16794f017e33676db02b662821a70d7398b4dd6e",
+      "bytes": 5427
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/azure_ai_language.py",
+      "mode": "100644",
+      "git_blob": "616c685cea780fc2a36ad173abf06064ed0d9ca0",
+      "copy_git_blob": "616c685cea780fc2a36ad173abf06064ed0d9ca0",
+      "sha256": "c4b39fc9eba0dfd8d350b28f97910537e27a1289ef7fd3e9c16345ebd1557e55",
+      "bytes": 6917
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/azure_openai_langextract_recognizer.py",
+      "mode": "100644",
+      "git_blob": "223b8172dad30136f4547e2637d91936a55cff10",
+      "copy_git_blob": "223b8172dad30136f4547e2637d91936a55cff10",
+      "sha256": "9372c8e2bd8d160905581a73729f232c1d53ca09f4f2fc21c1e3fdb0152fe1d2",
+      "bytes": 5740
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/azure_openai_provider.py",
+      "mode": "100644",
+      "git_blob": "9f9bd30bc863a40bf65e18f20244a5584fda69e3",
+      "copy_git_blob": "9f9bd30bc863a40bf65e18f20244a5584fda69e3",
+      "sha256": "afe63245e92987b10329676cd8364c4d09b59ad50435553c053724727951f4ad",
+      "bytes": 7765
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/basic_langextract_recognizer.py",
+      "mode": "100644",
+      "git_blob": "3e652e8deb68bf1d830dc5af51f45b7a6c9672b6",
+      "copy_git_blob": "3e652e8deb68bf1d830dc5af51f45b7a6c9672b6",
+      "sha256": "80d6adc8c74761f33ac61eb13bac75a9b8aed2ee3c9d4587b2559be6e3c61f5c",
+      "bytes": 3743
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/predefined_recognizers/third_party/langextract_recognizer.py",
+      "mode": "100644",
+      "git_blob": "cfaa08c1f44d94db46362872434efd68fe266ec2",
+      "copy_git_blob": "cfaa08c1f44d94db46362872434efd68fe266ec2",
+      "sha256": "4309603b9a3f34eb9c7b9b97e980a2898223122661e85eaf2bccc14e7e7a76a0",
+      "bytes": 6406
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/py.typed",
+      "mode": "100644",
+      "git_blob": "58e42dd2535228b6e3db84f37849c5aecff35a39",
+      "copy_git_blob": "58e42dd2535228b6e3db84f37849c5aecff35a39",
+      "sha256": "363ac354c13d6777784342d4c36b5e0fdeed11f827cd89241b361b22d708b6d3",
+      "bytes": 10
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/recognizer_registry/__init__.py",
+      "mode": "100644",
+      "git_blob": "110fd18681b3c587eb6f7a1cf3f3320d6f36750e",
+      "copy_git_blob": "110fd18681b3c587eb6f7a1cf3f3320d6f36750e",
+      "sha256": "d606a0b6ba764c46bbf42bb000f324bb0796502cd941adf2d4663f46f0a48197",
+      "bytes": 213
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/recognizer_registry/recognizer_registry.py",
+      "mode": "100644",
+      "git_blob": "a126026046de41dfaa122a56ce712c0b3535a23b",
+      "copy_git_blob": "a126026046de41dfaa122a56ce712c0b3535a23b",
+      "sha256": "a8b14e5879b1076fae1719f5ec7168777709441601e4da88d28330af05cdc5b0",
+      "bytes": 16168
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/recognizer_registry/recognizer_registry_provider.py",
+      "mode": "100644",
+      "git_blob": "cfebe00deffb6c333b4a9d546fc6ebb8ae59177b",
+      "copy_git_blob": "cfebe00deffb6c333b4a9d546fc6ebb8ae59177b",
+      "sha256": "a6ceda7b425de8f52ede27867019921edd0009efc8ea04071ac6397f7cb26236",
+      "bytes": 9136
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/recognizer_registry/recognizers_loader_utils.py",
+      "mode": "100644",
+      "git_blob": "524b1546eac3cf5697184e09f31b0a3d5fda7577",
+      "copy_git_blob": "524b1546eac3cf5697184e09f31b0a3d5fda7577",
+      "sha256": "8a97751baf61ced1ededa66aa72b37442e9bae3f13320a52a881e34004aafd9f",
+      "bytes": 34252
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/recognizer_result.py",
+      "mode": "100644",
+      "git_blob": "cff5783e0f4e6fe4a12b0c401e6d2cf705e486da",
+      "copy_git_blob": "cff5783e0f4e6fe4a12b0c401e6d2cf705e486da",
+      "sha256": "2d18b9ba35c2da653e2ebbfd1549ad5509682d454afd44459193d7cc758ede14",
+      "bytes": 5926
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/remote_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0350e2f5ae5a2e1c1398c908d928bc54c254d7b4",
+      "copy_git_blob": "0350e2f5ae5a2e1c1398c908d928bc54c254d7b4",
+      "sha256": "1e66cf444b9e304cd1d66a30b2da71659348fb75d72a1aff78bee51a933326f8",
+      "bytes": 1700
+    },
+    {
+      "path": "presidio-analyzer/presidio_analyzer/score_thresholds.py",
+      "mode": "100644",
+      "git_blob": "b41c14d7dcfe4d04960fde0c04e2336d5dbfc3a5",
+      "copy_git_blob": "b41c14d7dcfe4d04960fde0c04e2336d5dbfc3a5",
+      "sha256": "b0c1249ceaa505981e5f25eabf6ee4ec581767a0ea7247533b41c8722b11d79c",
+      "bytes": 1442
+    },
+    {
+      "path": "presidio-analyzer/pyproject.toml",
+      "mode": "100644",
+      "git_blob": "116203466cca51281f47870736f24aa8eafadf45",
+      "copy_git_blob": "116203466cca51281f47870736f24aa8eafadf45",
+      "sha256": "5f18a881c6a634abdffe5f21aa98308377a244dd374a3aae99250262efb4be85",
+      "bytes": 2435
+    },
+    {
+      "path": "presidio-analyzer/tests/__init__.py",
+      "mode": "100644",
+      "git_blob": "26fe605e4075734af24b251412a526509d4f905c",
+      "copy_git_blob": "26fe605e4075734af24b251412a526509d4f905c",
+      "sha256": "e8d3087fd5b5d36e4636e2f4a1b6e7aa924626b2f7badb7a05e78c7473a9f287",
+      "bytes": 126
+    },
+    {
+      "path": "presidio-analyzer/tests/assertions.py",
+      "mode": "100644",
+      "git_blob": "7194a6cdced58570b38ec07e5203714cca2a8966",
+      "copy_git_blob": "7194a6cdced58570b38ec07e5203714cca2a8966",
+      "sha256": "c0f563359dfdd029ec1667252f9e4734c07d1d372e7bd477c2bebaabe2b5f189",
+      "bytes": 1306
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/custom_recognizer_yaml.yaml",
+      "mode": "100644",
+      "git_blob": "d75abe5359a85107d36c19151281317211541730",
+      "copy_git_blob": "d75abe5359a85107d36c19151281317211541730",
+      "sha256": "f332c0d9236ed1a269c4a4da89d347fceba4c8a2dd0d5b232091032a31ea39f7",
+      "bytes": 452
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/default.yaml",
+      "mode": "100644",
+      "git_blob": "f6d2f619bdfe1323e1963b453affd7369dd5eeec",
+      "copy_git_blob": "f6d2f619bdfe1323e1963b453affd7369dd5eeec",
+      "sha256": "2e6bf180db9432b57cc641d7cd8809d0f123de24dc69e83ea8b3de44a13a2fd3",
+      "bytes": 365
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/missing_global_regex_flags.yaml",
+      "mode": "100644",
+      "git_blob": "3b7c618fbd17606044ee432472936dc9b7a13714",
+      "copy_git_blob": "3b7c618fbd17606044ee432472936dc9b7a13714",
+      "sha256": "d8db4d3beaf7bb56ba19899f7d7268f1ce6995f58ef3ca0a9cad4d9265b3259b",
+      "bytes": 203
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/missing_recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "d2543c58962ca0610e72ff448a011b13c328e4ec",
+      "copy_git_blob": "d2543c58962ca0610e72ff448a011b13c328e4ec",
+      "sha256": "0f4bc54f281891b6101fb6afa97c3189270389475ba859824e1d0be01090de9b",
+      "bytes": 148
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/recognizer_configuration_missing_keys.yaml",
+      "mode": "100644",
+      "git_blob": "f97c4f43f0ed1d1eee128b6579db98b443dcc634",
+      "copy_git_blob": "f97c4f43f0ed1d1eee128b6579db98b443dcc634",
+      "sha256": "bfd9a6dbe153dda79ee3abcf5d3504f5711950c73d0a8b6bef14cb84205380ca",
+      "bytes": 12
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "683858a7cfc49da002543d786b8b25d8a0013dc2",
+      "copy_git_blob": "683858a7cfc49da002543d786b8b25d8a0013dc2",
+      "sha256": "dd84b1d34b36d96f53b55cbb4ac5cd6ec7d1fdbd4c1a2a974317cf8443f798ef",
+      "bytes": 448
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/recognizers_error.yaml",
+      "mode": "100644",
+      "git_blob": "d800886d9c86731ae5c4a62b0b77c437015e00d2",
+      "copy_git_blob": "d800886d9c86731ae5c4a62b0b77c437015e00d2",
+      "sha256": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "bytes": 3
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/simple_analyzer_engine.yaml",
+      "mode": "100644",
+      "git_blob": "f467dd75556499e3dcb198df29747123617814ee",
+      "copy_git_blob": "f467dd75556499e3dcb198df29747123617814ee",
+      "sha256": "c8d7d432520f4f92b84cc200b05f6eb55e6110c9c5a8bf646a137324548a6a8f",
+      "bytes": 64
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test.yaml",
+      "mode": "100644",
+      "git_blob": "e22e15e88dabcc9ff908c452850c2363f76897e0",
+      "copy_git_blob": "e22e15e88dabcc9ff908c452850c2363f76897e0",
+      "sha256": "aa02fd8740c27ae4c24091618a98feece3da1223fa7073bbad7e3cf3a8e4146b",
+      "bytes": 404
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_ahds_reco.yaml",
+      "mode": "100644",
+      "git_blob": "0c71fffba5d6170909e3d3870f5e1adc88b4a43a",
+      "copy_git_blob": "0c71fffba5d6170909e3d3870f5e1adc88b4a43a",
+      "sha256": "96f1c0bc08bb97886468f0c2384bbf2b033c4a7fa427264930182a28644ec68b",
+      "bytes": 360
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_analyzer_engine.yaml",
+      "mode": "100644",
+      "git_blob": "e13b08113fc7b9b6d20cf8e4f6f1391872dfc927",
+      "copy_git_blob": "e13b08113fc7b9b6d20cf8e4f6f1391872dfc927",
+      "sha256": "276eee5a72c7cf825057a4d986c8844882e4506ba245ff3c2611e3b30debe4e1",
+      "bytes": 2158
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_azure_ai_language_reco.yaml",
+      "mode": "100644",
+      "git_blob": "167866e084255ef38ace04694a10df3f8ff37ba6",
+      "copy_git_blob": "167866e084255ef38ace04694a10df3f8ff37ba6",
+      "sha256": "072fff9d4a266574bc841dad3d20502ba4034926ea1f27aaa74c530844ef271e",
+      "bytes": 694
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_hf_recognizer_with_chunker.yaml",
+      "mode": "100644",
+      "git_blob": "7ad2e2043c84c565e386d28b35198836fccaf32d",
+      "copy_git_blob": "7ad2e2043c84c565e386d28b35198836fccaf32d",
+      "sha256": "930a72adc6986377cdf699a02463e3fb95fc592796ae7d4124d991aabf8847ec",
+      "bytes": 460
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_minimal_registry_conf.yaml",
+      "mode": "100644",
+      "git_blob": "6cfd0c38986487eb069cdf58f11bceb8d0620117",
+      "copy_git_blob": "6cfd0c38986487eb069cdf58f11bceb8d0620117",
+      "sha256": "f399144ccb6a1b5470e9ecd319baf6e8065955dfa9e7de58e3ac993d14913629",
+      "bytes": 97
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_multiple_nlp_recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "f2960b56be4439df85ad0883b7e3eb50675b5f5d",
+      "copy_git_blob": "f2960b56be4439df85ad0883b7e3eb50675b5f5d",
+      "sha256": "78b30124de84d8e82e1cdd23cd2cf709aaf8c6799c631be02565c237b6a36ebd",
+      "bytes": 455
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_nlp_reco_disabled_conf.yaml",
+      "mode": "100644",
+      "git_blob": "12e5cb56045ce121c8e0ece830654d8f6c37f0be",
+      "copy_git_blob": "12e5cb56045ce121c8e0ece830654d8f6c37f0be",
+      "sha256": "32e88fc9318cc0abc609f18b24da022d5565c33374f5a2820ca96b4dffaa54a7",
+      "bytes": 381
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_nlp_reco_does_not_match_engine.yaml",
+      "mode": "100644",
+      "git_blob": "167c8379f78e80d3e9bca77a1ef0b8f9641f37c7",
+      "copy_git_blob": "167c8379f78e80d3e9bca77a1ef0b8f9641f37c7",
+      "sha256": "0fab2a768ef86b7843ad538ad5fb57516a5783659bdd3200e66342e252e48695",
+      "bytes": 387
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_nlp_recognizer_only_conf.yaml",
+      "mode": "100644",
+      "git_blob": "1eb5aa4318ea3a1b0542a40c8502b70c7c3980d5",
+      "copy_git_blob": "1eb5aa4318ea3a1b0542a40c8502b70c7c3980d5",
+      "sha256": "67a1b209bbe9c90f0efcfd148f6ce0c7100525ae9969b03824263906228d4e71",
+      "bytes": 145
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_no_nlp_engine.yaml",
+      "mode": "100644",
+      "git_blob": "1995e25a24bd96676f9039417c4b20268406dc5b",
+      "copy_git_blob": "1995e25a24bd96676f9039417c4b20268406dc5b",
+      "sha256": "9498b67084f9e78f995b0c98d3a66f54929f47c73c8c96fa4f7f3d56ca72e563",
+      "bytes": 194
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_no_nlp_reco_conf.yaml",
+      "mode": "100644",
+      "git_blob": "10dc9e45aa3baf68fb84e6a6b5406418e20af076",
+      "copy_git_blob": "10dc9e45aa3baf68fb84e6a6b5406418e20af076",
+      "sha256": "2b0220be45b558dd07192a208be9df9f41a3666e33072623fa66b57405e5e823",
+      "bytes": 309
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_no_nlp_reco_conf_multilingual.yaml",
+      "mode": "100644",
+      "git_blob": "639070f313e16f8d3368a24a2986eea6e1949d92",
+      "copy_git_blob": "639070f313e16f8d3368a24a2986eea6e1949d92",
+      "sha256": "8124c668f41f36fde7f01a9963ff6747d982d459b11f2e20a1111c58ea0e6ff2",
+      "bytes": 375
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_recognizer_registry.yaml",
+      "mode": "100644",
+      "git_blob": "2ca7f895e9690244622edfcd400c76a6e09fa2e5",
+      "copy_git_blob": "2ca7f895e9690244622edfcd400c76a6e09fa2e5",
+      "sha256": "3afddc0147e9514a790d7c35e557651462eb9bb8f92f6827190698afcc84c3ea",
+      "bytes": 1304
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_recognizers.yaml",
+      "mode": "100644",
+      "git_blob": "f71a47b3e94b5ca615699ef2166b236934d7bc1b",
+      "copy_git_blob": "f71a47b3e94b5ca615699ef2166b236934d7bc1b",
+      "sha256": "43b0276c8009f7a3912a36285a56b5617d6287eeb1bd059f758485730e6cde73",
+      "bytes": 551
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_stanza.yaml",
+      "mode": "100644",
+      "git_blob": "f4d358ae1cdf7d69d456cc9be57efdd593fe2bcb",
+      "copy_git_blob": "f4d358ae1cdf7d69d456cc9be57efdd593fe2bcb",
+      "sha256": "73b74d63a1a9464a5eb4faf2642ac2de3c0d9c444885abc476a09bb6f689dade",
+      "bytes": 73
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_stanza_without_recognizer.yaml",
+      "mode": "100644",
+      "git_blob": "a731b8a2a7de498928f50514824e3580c8592b5a",
+      "copy_git_blob": "a731b8a2a7de498928f50514824e3580c8592b5a",
+      "sha256": "45872558842039da6b992de64b877646a5a69a6a13a5decd4e4230d0cd2837f7",
+      "bytes": 373
+    },
+    {
+      "path": "presidio-analyzer/tests/conf/test_transformers.yaml",
+      "mode": "100644",
+      "git_blob": "5fca7be77dfb265d54d2df2557accd2ff8c87320",
+      "copy_git_blob": "5fca7be77dfb265d54d2df2557accd2ff8c87320",
+      "sha256": "b547d7bf33b17aea15d330aed5682502da53311c6582641484d4470e42fd86f6",
+      "bytes": 989
+    },
+    {
+      "path": "presidio-analyzer/tests/conftest.py",
+      "mode": "100644",
+      "git_blob": "b2d1d3d521bf3a14643aa284331ae1165258f3ec",
+      "copy_git_blob": "b2d1d3d521bf3a14643aa284331ae1165258f3ec",
+      "sha256": "494e3e16e87f48fd8662f6ae7fc0a171512fc7978f066ace47c75eac3ff0ea7f",
+      "bytes": 4665
+    },
+    {
+      "path": "presidio-analyzer/tests/data/context_sentences_tests.txt",
+      "mode": "100644",
+      "git_blob": "51549711d36ca8bd815cf775f12c5bcd7597c519",
+      "copy_git_blob": "51549711d36ca8bd815cf775f12c5bcd7597c519",
+      "sha256": "21cdce5607caff4d6ee10c210a6f5393ff8778dfacd1609ed028fbcac9ea90f5",
+      "bytes": 2705
+    },
+    {
+      "path": "presidio-analyzer/tests/mocks/__init__.py",
+      "mode": "100644",
+      "git_blob": "842044247687d95e78f4dc36792ebf4fd0bf2888",
+      "copy_git_blob": "842044247687d95e78f4dc36792ebf4fd0bf2888",
+      "sha256": "c20b333e7968078811c590b02c432542805656ee61a5dd5c6f77790c278c4bb6",
+      "bytes": 234
+    },
+    {
+      "path": "presidio-analyzer/tests/mocks/app_tracer_mock.py",
+      "mode": "100644",
+      "git_blob": "36ff76a526092947645f376d9a633a943cd9bfe6",
+      "copy_git_blob": "36ff76a526092947645f376d9a633a943cd9bfe6",
+      "sha256": "d7610e752a89d77521939c00aefd38bc878f48a5d273b3b9fe40345b6450a10b",
+      "bytes": 1316
+    },
+    {
+      "path": "presidio-analyzer/tests/mocks/nlp_engine_mock.py",
+      "mode": "100644",
+      "git_blob": "bf11f0e0a549d1e6095c29243e0c9e5f2cea7901",
+      "copy_git_blob": "bf11f0e0a549d1e6095c29243e0c9e5f2cea7901",
+      "sha256": "83a76acb4abd1a464fa2187ca271ce45a1ee1fa8cb84559f5804c0f017012255",
+      "bytes": 1315
+    },
+    {
+      "path": "presidio-analyzer/tests/mocks/recognizer_registry_mock.py",
+      "mode": "100644",
+      "git_blob": "a132796287ee97e4b45866622dc86dbf86ca66e1",
+      "copy_git_blob": "a132796287ee97e4b45866622dc86dbf86ca66e1",
+      "sha256": "8f60ce7ff4fe31a37586afd9fdc2cfc88cc9985a6101e09bf6bba4b76d486e96",
+      "bytes": 480
+    },
+    {
+      "path": "presidio-analyzer/tests/test_aba_routing_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4fd50eee4f9e9cd2f154bc946bda825f661c9850",
+      "copy_git_blob": "4fd50eee4f9e9cd2f154bc946bda825f661c9850",
+      "sha256": "1c39e88d31296dbc8894e9aae46ee0183383ce23a2f2e58bdbaa5408bd5cd994",
+      "bytes": 1135
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ahds_recognizer.py",
+      "mode": "100644",
+      "git_blob": "231d3806804cb8e76a1abace1ce08999d282620a",
+      "copy_git_blob": "231d3806804cb8e76a1abace1ce08999d282620a",
+      "sha256": "ef4ed515b66bc7e59589332723d15eefa2e4e57ff543a136438fc6a1a747534c",
+      "bytes": 3653
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ahds_recognizer_credential_selection.py",
+      "mode": "100644",
+      "git_blob": "9d120f45aee916a98ecadc5f2bcb1ca668021417",
+      "copy_git_blob": "9d120f45aee916a98ecadc5f2bcb1ca668021417",
+      "sha256": "64e6853fd38771ceb9503dea813fbdf34907497aa60bb5dce4d21a85d22d8d5c",
+      "bytes": 6576
+    },
+    {
+      "path": "presidio-analyzer/tests/test_analyzer_engine.py",
+      "mode": "100644",
+      "git_blob": "bae95e1bf832f2d4d3017f60b5551d72dc4bcf5f",
+      "copy_git_blob": "bae95e1bf832f2d4d3017f60b5551d72dc4bcf5f",
+      "sha256": "29380f789474d7c9f722675b76eb5bfbb3d42ead0c606facd0e88407f641e31a",
+      "bytes": 42873
+    },
+    {
+      "path": "presidio-analyzer/tests/test_analyzer_engine_provider.py",
+      "mode": "100644",
+      "git_blob": "efe6ebe35bc1af228845784ba3be57ee29b6f4b6",
+      "copy_git_blob": "efe6ebe35bc1af228845784ba3be57ee29b6f4b6",
+      "sha256": "efb0564ee278aeb6fc9e9ef3631bf36d4f3de5e9ab890dcd6f51bdd7d0241630",
+      "bytes": 30263
+    },
+    {
+      "path": "presidio-analyzer/tests/test_analyzer_request.py",
+      "mode": "100644",
+      "git_blob": "c704ac9d57495c15c0e570a2e3bd827b196ee052",
+      "copy_git_blob": "c704ac9d57495c15c0e570a2e3bd827b196ee052",
+      "sha256": "0bec0a6f33386e38985dac8ed814657d27c3e91247f8e2c631c70ff4ee101107",
+      "bytes": 9409
+    },
+    {
+      "path": "presidio-analyzer/tests/test_app.py",
+      "mode": "100644",
+      "git_blob": "ebc9277455a00e6d45d1bf97a57bab238680d73d",
+      "copy_git_blob": "ebc9277455a00e6d45d1bf97a57bab238680d73d",
+      "sha256": "fcdfb29706acc4cb1bd88bdc9ec862ec4bce51c7ba590675ca786228bd98bb48",
+      "bytes": 2609
+    },
+    {
+      "path": "presidio-analyzer/tests/test_assertions.py",
+      "mode": "100644",
+      "git_blob": "c6393d8f010709e2cb91ca72d9d110350c23904c",
+      "copy_git_blob": "c6393d8f010709e2cb91ca72d9d110350c23904c",
+      "sha256": "4bff52f3672e29d842680215d00ca25b69049887da4ead0bf25ae29276942f49",
+      "bytes": 1201
+    },
+    {
+      "path": "presidio-analyzer/tests/test_au_abn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b4fb20713158efdbc3a68d810e3475c59b6a9ee1",
+      "copy_git_blob": "b4fb20713158efdbc3a68d810e3475c59b6a9ee1",
+      "sha256": "9f2e95e0e80c3b75042bba9025099daa6febf1d634ba80f4c94e09f763e5bfac",
+      "bytes": 1737
+    },
+    {
+      "path": "presidio-analyzer/tests/test_au_acn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0e9b18765e3de1db4f56aec6b30b1272fa3fa157",
+      "copy_git_blob": "0e9b18765e3de1db4f56aec6b30b1272fa3fa157",
+      "sha256": "243f5a01f1cd67ab737a15082fb3a29eebef425502a72f028d5eab966e4499df",
+      "bytes": 1614
+    },
+    {
+      "path": "presidio-analyzer/tests/test_au_medicare_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0f9a28f0874128a6e7af6c04cba20905e82b6233",
+      "copy_git_blob": "0f9a28f0874128a6e7af6c04cba20905e82b6233",
+      "sha256": "2a9c4e8fc7ba7d66b3d9493af836fd5688fb79d1805bd659ff9e70c8e5b6a662",
+      "bytes": 1445
+    },
+    {
+      "path": "presidio-analyzer/tests/test_au_tfn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "aa2613e9119bc35365ea49e6f5f36ddc9e51cffb",
+      "copy_git_blob": "aa2613e9119bc35365ea49e6f5f36ddc9e51cffb",
+      "sha256": "0718e1275bd7cc5616685ee5116b01359ce74077f3732f3ddc66dabc04feeb2e",
+      "bytes": 1428
+    },
+    {
+      "path": "presidio-analyzer/tests/test_azure_ai_language_recognizer.py",
+      "mode": "100644",
+      "git_blob": "330b0c271609139944acc20d8dc773632f7bb4bd",
+      "copy_git_blob": "330b0c271609139944acc20d8dc773632f7bb4bd",
+      "sha256": "61d2e929b3ff76ae82f04dd87f04a0a06870dacd590338a51d06f621bf5de5ef",
+      "bytes": 4474
+    },
+    {
+      "path": "presidio-analyzer/tests/test_azure_auth_helper.py",
+      "mode": "100644",
+      "git_blob": "4a4d8e2cbf8f56a992408227f409cb0e587448a4",
+      "copy_git_blob": "4a4d8e2cbf8f56a992408227f409cb0e587448a4",
+      "sha256": "3891203e5f8d664be17d15301f3a837d6d44b4ad07a5490fff4d31ac3154c43b",
+      "bytes": 4806
+    },
+    {
+      "path": "presidio-analyzer/tests/test_azure_openai_langextract_recognizer.py",
+      "mode": "100644",
+      "git_blob": "04a3d6fbe4cac4da56c0bd1280dd8c366d70407f",
+      "copy_git_blob": "04a3d6fbe4cac4da56c0bd1280dd8c366d70407f",
+      "sha256": "c9086cbdce251f7ccb348107e937b5006cd210e1ad5dc6f5798a88445a483eba",
+      "bytes": 22525
+    },
+    {
+      "path": "presidio-analyzer/tests/test_base_chunker.py",
+      "mode": "100644",
+      "git_blob": "189fff1134ab980b6b71212a9f4986d1ab70a16a",
+      "copy_git_blob": "189fff1134ab980b6b71212a9f4986d1ab70a16a",
+      "sha256": "706a6ef65576661b18fba483bf644897e6641479d131cf57029554c1f88c0a28",
+      "bytes": 4591
+    },
+    {
+      "path": "presidio-analyzer/tests/test_basic_langextract_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d75d846a59969a501f0ead0549927650b64ff1b6",
+      "copy_git_blob": "d75d846a59969a501f0ead0549927650b64ff1b6",
+      "sha256": "2d900da63e60b5878fe3629d7c6c55f5709bae9632dc2da16e9bf263fbf1b7ce",
+      "bytes": 30581
+    },
+    {
+      "path": "presidio-analyzer/tests/test_batch_analyzer_engine.py",
+      "mode": "100644",
+      "git_blob": "07acdaf9430eb6f69921a8bba4172ff85b5a1bb2",
+      "copy_git_blob": "07acdaf9430eb6f69921a8bba4172ff85b5a1bb2",
+      "sha256": "b10085434ccae07d406e3f4883590e67b7e793831787618d85e908fad0fa859c",
+      "bytes": 10082
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ca_postal_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4be2650f23de0173e915da7080f813f13951db1d",
+      "copy_git_blob": "4be2650f23de0173e915da7080f813f13951db1d",
+      "sha256": "bfe48297bd3e0172eed5480ef7c7bf85bd6f4c84201d610c3a0dffc6c0909eac",
+      "bytes": 3182
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ca_sin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "8beede5a45e69748246efd5afb1fbe1a01207727",
+      "copy_git_blob": "8beede5a45e69748246efd5afb1fbe1a01207727",
+      "sha256": "f743cb5ba44b2faaa4a90d5fd536c8df512a2c94d1faaacf54f703d6ab847766",
+      "bytes": 2367
+    },
+    {
+      "path": "presidio-analyzer/tests/test_certificate_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "59186936ec57f0d21b0e306bf6b90558165692af",
+      "copy_git_blob": "59186936ec57f0d21b0e306bf6b90558165692af",
+      "sha256": "27867804ca0a67653e30feba35838299dd35bf7ef8a7f096d3b848aa98ece062",
+      "bytes": 1209
+    },
+    {
+      "path": "presidio-analyzer/tests/test_character_based_text_chunker.py",
+      "mode": "100644",
+      "git_blob": "d222669625b2bf1b7f440bdb04b894830c0f4ada",
+      "copy_git_blob": "d222669625b2bf1b7f440bdb04b894830c0f4ada",
+      "sha256": "9dcce60c73031b80cd27c835c7bdaf9c6452cb82be1123ca1b02a1a451fd6fb0",
+      "bytes": 7269
+    },
+    {
+      "path": "presidio-analyzer/tests/test_config_loader.py",
+      "mode": "100644",
+      "git_blob": "f9a30a3ad80dad8952b4c65b68ed6a986686484c",
+      "copy_git_blob": "f9a30a3ad80dad8952b4c65b68ed6a986686484c",
+      "sha256": "1227e08e02ae43662b7a18fcf6bee6e894354f2cdba077ac0d28fc6131423a87",
+      "bytes": 10709
+    },
+    {
+      "path": "presidio-analyzer/tests/test_configuration_validator.py",
+      "mode": "100644",
+      "git_blob": "73d5172b6fac2cc3ab41ad55ea3869ab9d108298",
+      "copy_git_blob": "73d5172b6fac2cc3ab41ad55ea3869ab9d108298",
+      "sha256": "67b62cc709e10b023dcace94d5da1517adffe7666e942fcea5682455fd023d73",
+      "bytes": 18392
+    },
+    {
+      "path": "presidio-analyzer/tests/test_context_support.py",
+      "mode": "100644",
+      "git_blob": "f3f94307e465332ff31a5cbf399e7c829569add2",
+      "copy_git_blob": "f3f94307e465332ff31a5cbf399e7c829569add2",
+      "sha256": "70db8110a6d86efdd0f98191a65a382154a47d67373de4f8269f58d9df96c701",
+      "bytes": 8188
+    },
+    {
+      "path": "presidio-analyzer/tests/test_credit_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "acdf27a7b50c1b5079e8849f7ab4619c2b6fdc19",
+      "copy_git_blob": "acdf27a7b50c1b5079e8849f7ab4619c2b6fdc19",
+      "sha256": "05a20fb4f1fa90deb6820152fc4368d90ff49c8ec9ef3dae4f91cd5cc5ddad7d",
+      "bytes": 2102
+    },
+    {
+      "path": "presidio-analyzer/tests/test_crypto_recognizer.py",
+      "mode": "100644",
+      "git_blob": "08d4bdfb41515c96e342eab59b458c4742602bd9",
+      "copy_git_blob": "08d4bdfb41515c96e342eab59b458c4742602bd9",
+      "sha256": "09a62cd4767675ea1b09a8148cdf7f4b1dbecf31758af8c8a13f9029c30add8d",
+      "bytes": 2122
+    },
+    {
+      "path": "presidio-analyzer/tests/test_date_recognizer.py",
+      "mode": "100644",
+      "git_blob": "087b0ff5cb555329b7fc3ec18e172474b642e708",
+      "copy_git_blob": "087b0ff5cb555329b7fc3ec18e172474b642e708",
+      "sha256": "86bb73d865c248665a8573d0facb0c054f769e4ea45f8ab51a85a2ab6f8afc23",
+      "bytes": 4022
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_bsnr_recognizer.py",
+      "mode": "100644",
+      "git_blob": "804df45bd997b9405a362474327a0049c2dc4679",
+      "copy_git_blob": "804df45bd997b9405a362474327a0049c2dc4679",
+      "sha256": "01d83c8bceb2f8dbbb4e185fb3cdb551bb6582539962a6fcba31486df32ea118",
+      "bytes": 3916
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_fuehrerschein_recognizer.py",
+      "mode": "100644",
+      "git_blob": "04e9daa61866e1b921eeab150350718ad6978a79",
+      "copy_git_blob": "04e9daa61866e1b921eeab150350718ad6978a79",
+      "sha256": "69b7d8c9a5cd8bb96e00e52f6fb5e65fa8f5b9d4f7f17597ccd388d2ca8dc8b6",
+      "bytes": 2774
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_handelsregister_recognizer.py",
+      "mode": "100644",
+      "git_blob": "aef31012440fc02afd7fc54e5129f8fb0ae3d559",
+      "copy_git_blob": "aef31012440fc02afd7fc54e5129f8fb0ae3d559",
+      "sha256": "ee0fe8816e8c0e2c75839cbf442a96fc53773348c6b88af1b0ebd07761c5fa64",
+      "bytes": 1561
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_health_insurance_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9a724cbca4050520bcdac3e06c2294ca1b0edad3",
+      "copy_git_blob": "9a724cbca4050520bcdac3e06c2294ca1b0edad3",
+      "sha256": "178f7996c255027a95d6ee60f908e13ce5dedfa2e8f462dcf799b928a62126ee",
+      "bytes": 3986
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_id_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ebb704e524008a23ec9c9f4000529e0bf1f40e94",
+      "copy_git_blob": "ebb704e524008a23ec9c9f4000529e0bf1f40e94",
+      "sha256": "f1d24d48b4205f36f88a8cf51e9b16cfef04fafa130b5a7ade81302b481d3418",
+      "bytes": 3784
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_kfz_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ce5b4b08f1f2fe784d4c3848b06620908b0d5656",
+      "copy_git_blob": "ce5b4b08f1f2fe784d4c3848b06620908b0d5656",
+      "sha256": "cdd327e9f9e36a2002e19d395901360fedef9f732879108ae9fbefa1bf657edd",
+      "bytes": 1994
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_lanr_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9bab43974197a620de3e06ec63ce27f5cb61c14e",
+      "copy_git_blob": "9bab43974197a620de3e06ec63ce27f5cb61c14e",
+      "sha256": "e7d469500e562f25f0a7c618fcab4747e87f67a6f0a17eadf925138a23257603",
+      "bytes": 2957
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "be0375387d1d070c924bd6feeaf973a8a0858712",
+      "copy_git_blob": "be0375387d1d070c924bd6feeaf973a8a0858712",
+      "sha256": "bfa0fb1de67a207ef226886e7d51ac9d48cea9f6b159abafcbf52d70b4a84ea7",
+      "bytes": 3527
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_plz_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9ef0c93de1eee12c4a7e3e68c098509a05a75646",
+      "copy_git_blob": "9ef0c93de1eee12c4a7e3e68c098509a05a75646",
+      "sha256": "5f1102916ba66587817d7fe2cf9516c2110cb81c7cd199513dfc5f85c178040b",
+      "bytes": 2201
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_social_security_recognizer.py",
+      "mode": "100644",
+      "git_blob": "95e68253a09facaf8303c5f4944ee632acbdd141",
+      "copy_git_blob": "95e68253a09facaf8303c5f4944ee632acbdd141",
+      "sha256": "17ec887773bef3e2e7f24a6ae54c7b63a00d25a3690f81a1c8fcbe8d980b942d",
+      "bytes": 3389
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_tax_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "94946a7e08409e75304f7c7c8de324eef98a19e7",
+      "copy_git_blob": "94946a7e08409e75304f7c7c8de324eef98a19e7",
+      "sha256": "97c1e4cf3d258eb3d1cb873bd052a720ab79448a8a31b71da3a5a92b340a6a54",
+      "bytes": 2670
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_tax_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "51ebeaacb9905242f14eacb0628f2b21e92e7b20",
+      "copy_git_blob": "51ebeaacb9905242f14eacb0628f2b21e92e7b20",
+      "sha256": "b19e38c7faaa9a3a0635f1bb9fa6351d8d55f402c51a06ba64ef93783eef2f39",
+      "bytes": 1667
+    },
+    {
+      "path": "presidio-analyzer/tests/test_de_vat_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "36a96cc66cf009e7ddd533a42fe220aebb2c38b0",
+      "copy_git_blob": "36a96cc66cf009e7ddd533a42fe220aebb2c38b0",
+      "sha256": "58ced248e7e5b5e8caf65c836a0311aad147150391aa4fc6e9212ab6c78d2024",
+      "bytes": 8631
+    },
+    {
+      "path": "presidio-analyzer/tests/test_device_detector.py",
+      "mode": "100644",
+      "git_blob": "9341334834179554c6831ca48ccdb56eac7ca679",
+      "copy_git_blob": "9341334834179554c6831ca48ccdb56eac7ca679",
+      "sha256": "2fecbbaf71efdfae841886237568d4ef1c94606023d83f0dc449815ba8a95e7e",
+      "bytes": 10009
+    },
+    {
+      "path": "presidio-analyzer/tests/test_email_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ffb0336aea58e39e48d9cc5e9308853dc3f011ed",
+      "copy_git_blob": "ffb0336aea58e39e48d9cc5e9308853dc3f011ed",
+      "sha256": "c3e560cd6e7699b1c650de317df94dd20d2d1f12c41bacb6906474a873726a9e",
+      "bytes": 1472
+    },
+    {
+      "path": "presidio-analyzer/tests/test_entity_mapper.py",
+      "mode": "100644",
+      "git_blob": "60f1875d440f5154978db990126f207467864d0a",
+      "copy_git_blob": "60f1875d440f5154978db990126f207467864d0a",
+      "sha256": "b97e82a25d5ebbd1391b9b2e785b91b24340bf93290bbf28e067e6ccbd66c6ff",
+      "bytes": 16073
+    },
+    {
+      "path": "presidio-analyzer/tests/test_entity_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1e0158decce00364c6222218ecc67c310e29bad0",
+      "copy_git_blob": "1e0158decce00364c6222218ecc67c310e29bad0",
+      "sha256": "f320845e56ee912f6c05766c58475f1428a1fd5e44be89bc4eb6b0de7ce71940",
+      "bytes": 9539
+    },
+    {
+      "path": "presidio-analyzer/tests/test_es_nie_recognizer.py",
+      "mode": "100644",
+      "git_blob": "070d83fbebe0aedd00adc83db1b24848b54463fc",
+      "copy_git_blob": "070d83fbebe0aedd00adc83db1b24848b54463fc",
+      "sha256": "5ca890e6a07457591746bee2245328b630e8bb49ead2f6f7c4f864bc91030d04",
+      "bytes": 2138
+    },
+    {
+      "path": "presidio-analyzer/tests/test_es_nif_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a32db15125a396adc81462c7dddad0b5d629a7f5",
+      "copy_git_blob": "a32db15125a396adc81462c7dddad0b5d629a7f5",
+      "sha256": "29e0e19afecf3f81d2f43f058f585efeb997044512badddfbccf62eb5e8fa3cb",
+      "bytes": 1339
+    },
+    {
+      "path": "presidio-analyzer/tests/test_es_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "cf06c38d5c62dd7a0a5ff9e29099476581ff1a8c",
+      "copy_git_blob": "cf06c38d5c62dd7a0a5ff9e29099476581ff1a8c",
+      "sha256": "2503d7c3bfd644543d47e05b8d01eb30786bddf8e4c1769480d7eb4714052735",
+      "bytes": 2550
+    },
+    {
+      "path": "presidio-analyzer/tests/test_examples_loader.py",
+      "mode": "100644",
+      "git_blob": "2f218891639135d8177db0df42189554872fab29",
+      "copy_git_blob": "2f218891639135d8177db0df42189554872fab29",
+      "sha256": "ec8a00b73693ebdc00c96625513d9e6a5475d194689539fef058a3e0045ac8c1",
+      "bytes": 10292
+    },
+    {
+      "path": "presidio-analyzer/tests/test_fi_personal_identity_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f1f4d55b5a947f84a1319cdab784aa448cff3dcd",
+      "copy_git_blob": "f1f4d55b5a947f84a1319cdab784aa448cff3dcd",
+      "sha256": "48f22b56500afc4ce4f1e970b933e40de9068b2f84e510580f9d37109bd52a3d",
+      "bytes": 4594
+    },
+    {
+      "path": "presidio-analyzer/tests/test_gliner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "69a75263c111586e87318edd55ab2dc37d6c1408",
+      "copy_git_blob": "69a75263c111586e87318edd55ab2dc37d6c1408",
+      "sha256": "2d1918795c10fa5e4a63d46ce56a65be4b127b2aa41c801f8e6a8dccc1f14362",
+      "bytes": 15634
+    },
+    {
+      "path": "presidio-analyzer/tests/test_huggingface_ner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "40368d93cc97e0b3f97936dd94e6ea6e3481fdfb",
+      "copy_git_blob": "40368d93cc97e0b3f97936dd94e6ea6e3481fdfb",
+      "sha256": "59a6f2b238767b48a66b3d126d6705519a4a607146984dbdb95ff0813a9cc43d",
+      "bytes": 26345
+    },
+    {
+      "path": "presidio-analyzer/tests/test_iban_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9c97d41446e0cd60cd3827e9c310a2b36d18e634",
+      "copy_git_blob": "9c97d41446e0cd60cd3827e9c310a2b36d18e634",
+      "sha256": "bc2ba9b83ef43401fa23c174d1c9df6a19807b18e6396f492b93ddfe4a16e362",
+      "bytes": 20686
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_aadhaar_recognizer.py",
+      "mode": "100644",
+      "git_blob": "682749061086080808d96d63ae8e02a79942e0ec",
+      "copy_git_blob": "682749061086080808d96d63ae8e02a79942e0ec",
+      "sha256": "5784caa6ac5d71bb978d2e21b58d5d156ba7969c21ce355eae13ebccb9fc60f0",
+      "bytes": 2774
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_gstin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5a32a36eee7f91df9325d94282372ee1b1b4129a",
+      "copy_git_blob": "5a32a36eee7f91df9325d94282372ee1b1b4129a",
+      "sha256": "d38565f8e1ddc510bd17d52575b37c9de94305adc2cf6e69955f945067e2376f",
+      "bytes": 6371
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_pan_recognizer.py",
+      "mode": "100644",
+      "git_blob": "2c7b136255cfd7163a61bbe5d2ab42f432a94e47",
+      "copy_git_blob": "2c7b136255cfd7163a61bbe5d2ab42f432a94e47",
+      "sha256": "816a524f6fb06da1cebd18dc9e51195e01fdcb7b4a960d3f934d68ef909a8dc4",
+      "bytes": 1143
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "327aa78d784b038fd504d07a264db3f6cf245347",
+      "copy_git_blob": "327aa78d784b038fd504d07a264db3f6cf245347",
+      "sha256": "13c691c8c55da0200aa9ef2c18a088998359561605e4bf52f11ff6f433510f2f",
+      "bytes": 1283
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c97832e6ef49f37b12bce47b6db527dd608ccc41",
+      "copy_git_blob": "c97832e6ef49f37b12bce47b6db527dd608ccc41",
+      "sha256": "1a1434e3fb7842c1b74d49441f3d120a7cf9b69d0dd4c6751425597d6c8b2874",
+      "bytes": 4861
+    },
+    {
+      "path": "presidio-analyzer/tests/test_in_voter_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ad4857c45ed79f64526a28e0ed173f1fc4da4851",
+      "copy_git_blob": "ad4857c45ed79f64526a28e0ed173f1fc4da4851",
+      "sha256": "4d731bf28c137b91c6ee8993154062339a6d03dbde59e3082122377071263e09",
+      "bytes": 1233
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ip_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a1dfea9b662a45edfb06896f75c657f9ad5fc09e",
+      "copy_git_blob": "a1dfea9b662a45edfb06896f75c657f9ad5fc09e",
+      "sha256": "524085bfe65271b4a24964e5f3e5060fc67817b5db27df1fbac1e1e588b4e5aa",
+      "bytes": 15640
+    },
+    {
+      "path": "presidio-analyzer/tests/test_it_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "00127f6b4d869e7d93359ff9d279eec3785a270b",
+      "copy_git_blob": "00127f6b4d869e7d93359ff9d279eec3785a270b",
+      "sha256": "d5f6ee56e8c1e6df04194333a3457c0450d2ec9a2cf4af474911b039931c11ab",
+      "bytes": 1870
+    },
+    {
+      "path": "presidio-analyzer/tests/test_it_fiscal_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a705eb8e09f94cf41d0532f665a0edb92252b71c",
+      "copy_git_blob": "a705eb8e09f94cf41d0532f665a0edb92252b71c",
+      "sha256": "a7ae26d13715f5046359b704b148199824d2abce7a8d8feb0859b0f341afd4f1",
+      "bytes": 1616
+    },
+    {
+      "path": "presidio-analyzer/tests/test_it_identity_card_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c151f3b0351d3a30a02687b5f25ac2576549a930",
+      "copy_git_blob": "c151f3b0351d3a30a02687b5f25ac2576549a930",
+      "sha256": "53b8889459e01866b7780579e8b506d262e119822812901931673f53a92fef66",
+      "bytes": 1439
+    },
+    {
+      "path": "presidio-analyzer/tests/test_it_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "13b351862243b9de308562e8a153118bf725ae81",
+      "copy_git_blob": "13b351862243b9de308562e8a153118bf725ae81",
+      "sha256": "b90e5273683d1e8c08de01d43b7729e681b727d9fe9aa3c2283cb223e0fe01d7",
+      "bytes": 1141
+    },
+    {
+      "path": "presidio-analyzer/tests/test_it_vat_code_recognizer.py",
+      "mode": "100644",
+      "git_blob": "47f8dfd78aa47a3d1646082fc6ce145297e08775",
+      "copy_git_blob": "47f8dfd78aa47a3d1646082fc6ce145297e08775",
+      "sha256": "3bd1dd38dd1a64bea424867f50cf9bf8a7d42ea5e7fd86f895302b3e54effc13",
+      "bytes": 1558
+    },
+    {
+      "path": "presidio-analyzer/tests/test_kr_brn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4711832135967183d09a471480d6dc0dc07b536a",
+      "copy_git_blob": "4711832135967183d09a471480d6dc0dc07b536a",
+      "sha256": "c951d33626b81b4c77b0f8386b9503f08d55f5a517c825efc4c0681a1a65d9c4",
+      "bytes": 1684
+    },
+    {
+      "path": "presidio-analyzer/tests/test_kr_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "936573de28294c2fc1485e0065358bb5a3ff999c",
+      "copy_git_blob": "936573de28294c2fc1485e0065358bb5a3ff999c",
+      "sha256": "56e154f59ae7ab507675c4412f2d5592451fae38774cfdb42f35ad2998eb2009",
+      "bytes": 2248
+    },
+    {
+      "path": "presidio-analyzer/tests/test_kr_frn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "05bd40fde414e4a61c46da4d7034cd24a7d624a3",
+      "copy_git_blob": "05bd40fde414e4a61c46da4d7034cd24a7d624a3",
+      "sha256": "24c6d62043322b0f79040a9d59908cd04f18727fa51f7402084f3698bc3a6308",
+      "bytes": 2064
+    },
+    {
+      "path": "presidio-analyzer/tests/test_kr_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a9042c1368afb4c77e75a4a1f3cc4e23835ea831",
+      "copy_git_blob": "a9042c1368afb4c77e75a4a1f3cc4e23835ea831",
+      "sha256": "b09d114982b5ce94ebb1296b7f337b0417fbdaad8a3ced63bb777f6f1f38f01d",
+      "bytes": 6977
+    },
+    {
+      "path": "presidio-analyzer/tests/test_kr_rrn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "3a1719e0793275553fd2e84fd4c34041af92d423",
+      "copy_git_blob": "3a1719e0793275553fd2e84fd4c34041af92d423",
+      "sha256": "d85c91d90cddcea028c01c06f344d58121b6fe5c79de899217206d2302c405c1",
+      "bytes": 2039
+    },
+    {
+      "path": "presidio-analyzer/tests/test_langextract_helper.py",
+      "mode": "100644",
+      "git_blob": "c04901f1c7ced39c94dd6dda42e856802965cd43",
+      "copy_git_blob": "c04901f1c7ced39c94dd6dda42e856802965cd43",
+      "sha256": "8397f85f41ad9410b61335b358d71da761433ddfd1e86aca5229fdee321f2ce3",
+      "bytes": 10428
+    },
+    {
+      "path": "presidio-analyzer/tests/test_language_validation.py",
+      "mode": "100644",
+      "git_blob": "7cc22909ff78e58bdb2ed6006f4ad6f35e858abb",
+      "copy_git_blob": "7cc22909ff78e58bdb2ed6006f4ad6f35e858abb",
+      "sha256": "2535a551a00b209a8d04b0388073160f3dafaebc63c14dceef316afe9f5bd175",
+      "bytes": 661
+    },
+    {
+      "path": "presidio-analyzer/tests/test_lemma_context_aware_enhancer.py",
+      "mode": "100644",
+      "git_blob": "74df0e8e8597579392966321c349cb8a528528cf",
+      "copy_git_blob": "74df0e8e8597579392966321c349cb8a528528cf",
+      "sha256": "1bed00689af92acbd06342932a53aedf4307ad2a3b731d2e739c40a0799d963b",
+      "bytes": 10728
+    },
+    {
+      "path": "presidio-analyzer/tests/test_lm_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e6d4c39823d8847816e962ffcc0fe5cd37b49f50",
+      "copy_git_blob": "e6d4c39823d8847816e962ffcc0fe5cd37b49f50",
+      "sha256": "2b6378e459a1fa17e658c71152510086d784d15cd5101e026adec247252368d9",
+      "bytes": 9887
+    },
+    {
+      "path": "presidio-analyzer/tests/test_mac_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f937869b9ec0689e88230dbabcf71868aa9783e7",
+      "copy_git_blob": "f937869b9ec0689e88230dbabcf71868aa9783e7",
+      "sha256": "372808c3d25afe746300c21da534e7c4c0de8d37c745d26bf7b6bfe067cd2e1d",
+      "bytes": 2820
+    },
+    {
+      "path": "presidio-analyzer/tests/test_medical_ner_recognizer.py",
+      "mode": "100644",
+      "git_blob": "bf2505f7a1094f9149e3bc8d1423d32d959841ab",
+      "copy_git_blob": "bf2505f7a1094f9149e3bc8d1423d32d959841ab",
+      "sha256": "93153f88cd044da46f5218604c9ada1f110a0ff05efc9529d1e3eda230c69e69",
+      "bytes": 8563
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ner_model_configuration.py",
+      "mode": "100644",
+      "git_blob": "56d12070e3cfae2d9066f6a8dca945a8af336bd0",
+      "copy_git_blob": "56d12070e3cfae2d9066f6a8dca945a8af336bd0",
+      "sha256": "eb0bf4c00168ad6a74978e569eac2e1dcfc38c53b073d19ceee1184af5a4054c",
+      "bytes": 3413
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ng_nin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "1182f7ad73762c044c2121d7421a6c846ee00715",
+      "copy_git_blob": "1182f7ad73762c044c2121d7421a6c846ee00715",
+      "sha256": "a86525f1026f6651575bf709f6e7585ddd3461f10f24e00dfe33ef2248f58395",
+      "bytes": 5284
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ng_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9e45f04edf94356fe09f87727dcdfbd5432c61f3",
+      "copy_git_blob": "9e45f04edf94356fe09f87727dcdfbd5432c61f3",
+      "sha256": "2a9db01d83362f6e7eb7f33d0c8496cce6041ecdb11cf85adc155c828f4a2cbd",
+      "bytes": 3199
+    },
+    {
+      "path": "presidio-analyzer/tests/test_nlp_engine_provider.py",
+      "mode": "100644",
+      "git_blob": "f10517c3eda90e59142f5b080114d6a37718895c",
+      "copy_git_blob": "f10517c3eda90e59142f5b080114d6a37718895c",
+      "sha256": "7b78b7701689b7042179b8259f816138245702c4ee87df6dfdadef3f8d3140b1",
+      "bytes": 11569
+    },
+    {
+      "path": "presidio-analyzer/tests/test_no_op_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "c6a979bbdc80a3b6b94198a018ccc8f8a091d90d",
+      "copy_git_blob": "c6a979bbdc80a3b6b94198a018ccc8f8a091d90d",
+      "sha256": "82916b4074a1d5500a7b3433234457e37e283ff46394b3325055c4d116ae239f",
+      "bytes": 15545
+    },
+    {
+      "path": "presidio-analyzer/tests/test_pattern.py",
+      "mode": "100644",
+      "git_blob": "255aa9e7b61f53c7b7e72cd8cbefb7666f735733",
+      "copy_git_blob": "255aa9e7b61f53c7b7e72cd8cbefb7666f735733",
+      "sha256": "075d0184c0047c880efc13d6a23714c6124f4585c1fb23eee2ecc081cf4e169f",
+      "bytes": 2159
+    },
+    {
+      "path": "presidio-analyzer/tests/test_pattern_recognizer.py",
+      "mode": "100644",
+      "git_blob": "61eebb6f4cba14c5c8e0ccfbb4a07c1549f02213",
+      "copy_git_blob": "61eebb6f4cba14c5c8e0ccfbb4a07c1549f02213",
+      "sha256": "27ea8c43b8c26643567527f211c42029486acc88dfa2c7c570dcda04db772ee4",
+      "bytes": 18984
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ph_mobile_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f1b2736e476766012dff3820f2313530a79bbb9c",
+      "copy_git_blob": "f1b2736e476766012dff3820f2313530a79bbb9c",
+      "sha256": "188b793e694889ab39b40bd265aaf21e6d730bc0c1476e925adf538339b5db86",
+      "bytes": 5093
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ph_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e4cfd8957a039c682a132c36cb2bf33654e76d1a",
+      "copy_git_blob": "e4cfd8957a039c682a132c36cb2bf33654e76d1a",
+      "sha256": "75ce107701730b0b53c6f792e5280b204f9012edd94c97ff93c5f3b97f060d08",
+      "bytes": 2339
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ph_tin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b1764046182545d518dedc2138259a4709e43496",
+      "copy_git_blob": "b1764046182545d518dedc2138259a4709e43496",
+      "sha256": "3466c90b5d4621eed494953fd4217ff3d56535891938efe121c739cb20d6f493",
+      "bytes": 1932
+    },
+    {
+      "path": "presidio-analyzer/tests/test_ph_umid_recognizer.py",
+      "mode": "100644",
+      "git_blob": "5d5619d2de56c1ac1149601ae8472fedae28079b",
+      "copy_git_blob": "5d5619d2de56c1ac1149601ae8472fedae28079b",
+      "sha256": "a191d6e3c27ca1fc26a5ff94c8e18cbcef52681129479be371210d743c018acc",
+      "bytes": 3442
+    },
+    {
+      "path": "presidio-analyzer/tests/test_phone_recognizer.py",
+      "mode": "100644",
+      "git_blob": "fbbe3ffe6e3c382a249c93ec715085217e307c27",
+      "copy_git_blob": "fbbe3ffe6e3c382a249c93ec715085217e307c27",
+      "sha256": "2b877b71c5630f89ab399d7fd5cfd9eab8a818bb83de444e1dfdd4412ffb6f52",
+      "bytes": 7580
+    },
+    {
+      "path": "presidio-analyzer/tests/test_pl_pesel_recognizer.py",
+      "mode": "100644",
+      "git_blob": "7757566a2670bc6fe3a3eb0873aa14d1669391ff",
+      "copy_git_blob": "7757566a2670bc6fe3a3eb0873aa14d1669391ff",
+      "sha256": "a6f9c4725ce028dd6b4e874fde4496df35d0b951dd571e614eb9793c7e392a3e",
+      "bytes": 2126
+    },
+    {
+      "path": "presidio-analyzer/tests/test_prompt_loader.py",
+      "mode": "100644",
+      "git_blob": "7ff21324189ac6ab966eb06aeef2bcdec7e562f3",
+      "copy_git_blob": "7ff21324189ac6ab966eb06aeef2bcdec7e562f3",
+      "sha256": "bfa2149aaf9ce7f45354fa3a250a3d73f991ba14e9e34a0b9c25ddee523271fa",
+      "bytes": 5223
+    },
+    {
+      "path": "presidio-analyzer/tests/test_recognizer_registry.py",
+      "mode": "100644",
+      "git_blob": "dccec77b48cd25c3b58fafa4da7f53b72ef791da",
+      "copy_git_blob": "dccec77b48cd25c3b58fafa4da7f53b72ef791da",
+      "sha256": "a87e6e4cb47a47bce581ec29a89ed0de9f142542f9ce5c3b618d07029548dcce",
+      "bytes": 35705
+    },
+    {
+      "path": "presidio-analyzer/tests/test_recognizer_registry_provider.py",
+      "mode": "100644",
+      "git_blob": "f18f89b87589a891e977cf002786144c1b122a76",
+      "copy_git_blob": "f18f89b87589a891e977cf002786144c1b122a76",
+      "sha256": "f64ee6f753a167795f0f78c64da76ba762eeb413f2b7659f8da21fe9ce9f6f20",
+      "bytes": 17973
+    },
+    {
+      "path": "presidio-analyzer/tests/test_recognizer_result.py",
+      "mode": "100644",
+      "git_blob": "08987aefcc4772a3cb404e94e4c4ae9ae2c8c098",
+      "copy_git_blob": "08987aefcc4772a3cb404e94e4c4ae9ae2c8c098",
+      "sha256": "fd178e96c885b16fa0f1d9fd5a8b409d2400c9729b2a6c26ed20329a6b4adabe",
+      "bytes": 5124
+    },
+    {
+      "path": "presidio-analyzer/tests/test_recognizers_loader_utils.py",
+      "mode": "100644",
+      "git_blob": "987b5c04d3bcac5a3a9599ef112ef01818b3e3cc",
+      "copy_git_blob": "987b5c04d3bcac5a3a9599ef112ef01818b3e3cc",
+      "sha256": "58be1247c299ae6e7cebb755da2e09e95f7ae9db9d4c7b75dc1a158789fd4962",
+      "bytes": 33422
+    },
+    {
+      "path": "presidio-analyzer/tests/test_se_organisationsnummer_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d34a70bc7e98a27c8c7d2f9ce974cfad12d9ac89",
+      "copy_git_blob": "d34a70bc7e98a27c8c7d2f9ce974cfad12d9ac89",
+      "sha256": "9cec98e5dd40993b2d3937d5ede415f797b479da65fe878d71235bdb2bc487ac",
+      "bytes": 1871
+    },
+    {
+      "path": "presidio-analyzer/tests/test_se_personnummer_recognizer.py",
+      "mode": "100644",
+      "git_blob": "db81c6f57fc6f7548516bd3b27d602efd66e9683",
+      "copy_git_blob": "db81c6f57fc6f7548516bd3b27d602efd66e9683",
+      "sha256": "314106e1789609791a02ffe7197e3bd0dfc01373700130c0fe2db624f51170da",
+      "bytes": 2429
+    },
+    {
+      "path": "presidio-analyzer/tests/test_sg_fin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e18720abefbaf3851c9c31d1017877cf51bcfd4d",
+      "copy_git_blob": "e18720abefbaf3851c9c31d1017877cf51bcfd4d",
+      "sha256": "e69f89100f29db52ccec8c7e3ad029e5fd0651601511505b8e7cd31f95cd5bce",
+      "bytes": 2502
+    },
+    {
+      "path": "presidio-analyzer/tests/test_sg_uen_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4ee767cd93985d22b154cbd9de14552d616e29df",
+      "copy_git_blob": "4ee767cd93985d22b154cbd9de14552d616e29df",
+      "sha256": "10e89b211b6dfdd7f3a795e526ce4ec50e792102a78199046caa512c52a2a0ce",
+      "bytes": 1791
+    },
+    {
+      "path": "presidio-analyzer/tests/test_slim_spacy_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "3ce2e08e23f9c53e92caedbacff446c0a2b1f464",
+      "copy_git_blob": "3ce2e08e23f9c53e92caedbacff446c0a2b1f464",
+      "sha256": "e4d3ac5603e5358df713571c96aff62efc91a4859c2a02491ace76f2828c33a4",
+      "bytes": 13153
+    },
+    {
+      "path": "presidio-analyzer/tests/test_spacy_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "152032c1c1d2504184078b1d81cf7462ad444513",
+      "copy_git_blob": "152032c1c1d2504184078b1d81cf7462ad444513",
+      "sha256": "5de021a307677be0cdc6dc15c619bbab1f62d897d9ac76e844eff410c9e5cfca",
+      "bytes": 5785
+    },
+    {
+      "path": "presidio-analyzer/tests/test_spacy_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c77969cf410a27ad98c793ff29ea2dbe58a18ec0",
+      "copy_git_blob": "c77969cf410a27ad98c793ff29ea2dbe58a18ec0",
+      "sha256": "bd8c1e915706e0b09b92e111e68283666135cf50831457f758d97efa66c6a5cc",
+      "bytes": 3650
+    },
+    {
+      "path": "presidio-analyzer/tests/test_stanza_batch_processing.py",
+      "mode": "100644",
+      "git_blob": "cffb5342864c78b0e8352961ec0735520b8daeb0",
+      "copy_git_blob": "cffb5342864c78b0e8352961ec0735520b8daeb0",
+      "sha256": "9d12d3f07c347590ab0487512c80dfa3d028c8b8481042e2c441f9c3403ce5db",
+      "bytes": 12282
+    },
+    {
+      "path": "presidio-analyzer/tests/test_stanza_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "766dbaed43f0ad0d782357a8708fad6256f992d0",
+      "copy_git_blob": "766dbaed43f0ad0d782357a8708fad6256f992d0",
+      "sha256": "3cf9817d8a838b797d42056b10f52a64452bcd86cfc2fa7baeef263038019917",
+      "bytes": 3049
+    },
+    {
+      "path": "presidio-analyzer/tests/test_stanza_recognizer.py",
+      "mode": "100644",
+      "git_blob": "2e2a6295ffff1a948d6ddad8d0718c14745223fe",
+      "copy_git_blob": "2e2a6295ffff1a948d6ddad8d0718c14745223fe",
+      "sha256": "a78f3e3b26a89d99e4dce0fd52ff5be907e0a7b46c9f0f91394e77043a3d5a6b",
+      "bytes": 2161
+    },
+    {
+      "path": "presidio-analyzer/tests/test_text_chunker_provider.py",
+      "mode": "100644",
+      "git_blob": "fcb1b6464c40d2ef11f4fd73e2615c18db59e4cc",
+      "copy_git_blob": "fcb1b6464c40d2ef11f4fd73e2615c18db59e4cc",
+      "sha256": "209829d5f343dd54b8c7c1b7cb507911a445765b9ffbfa23eeda2be606cd4a37",
+      "bytes": 1674
+    },
+    {
+      "path": "presidio-analyzer/tests/test_th_tnin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f697dc5eca2ccb9861f32df799e87bb158dbbb26",
+      "copy_git_blob": "f697dc5eca2ccb9861f32df799e87bb158dbbb26",
+      "sha256": "15192f775d6da2b3f3bd397f5a5f79d6656327d4a83fceac5a39b5e7e5388443",
+      "bytes": 6910
+    },
+    {
+      "path": "presidio-analyzer/tests/test_tokenizer_based_text_chunker.py",
+      "mode": "100644",
+      "git_blob": "0d7837a0e0dcf0f40cefba3e86e758ab12d79da2",
+      "copy_git_blob": "0d7837a0e0dcf0f40cefba3e86e758ab12d79da2",
+      "sha256": "a699470a0bfc5bb822c3464b9ba0a0d6cf6284d2be80937789212bd97d483b1f",
+      "bytes": 10027
+    },
+    {
+      "path": "presidio-analyzer/tests/test_tr_license_plate_recognizer.py",
+      "mode": "100644",
+      "git_blob": "99377c2ea87869418f56a802dcf564de69032a05",
+      "copy_git_blob": "99377c2ea87869418f56a802dcf564de69032a05",
+      "sha256": "9fcec6586abd7b0bb9a67d13bb889e24a2f2f3848a2c24083902cee849182a9d",
+      "bytes": 4047
+    },
+    {
+      "path": "presidio-analyzer/tests/test_tr_national_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b6c20e9e9127abd9aed5fb1069f0747409713b6b",
+      "copy_git_blob": "b6c20e9e9127abd9aed5fb1069f0747409713b6b",
+      "sha256": "de409878ce526f66401245b5f07c10601fd9ad250fd6e5b012bf880a71bf4bcd",
+      "bytes": 5924
+    },
+    {
+      "path": "presidio-analyzer/tests/test_tr_phone_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "8ab0470f9c5b47a0bd88f21ece96c7a9ba732a9a",
+      "copy_git_blob": "8ab0470f9c5b47a0bd88f21ece96c7a9ba732a9a",
+      "sha256": "184101c71f221af81ba6cee5712c49fbb87c77ffd6f54c81b9d658405cdcdcab",
+      "bytes": 5589
+    },
+    {
+      "path": "presidio-analyzer/tests/test_transformers_nlp_engine.py",
+      "mode": "100644",
+      "git_blob": "cd0274e0def0cf9d20c6b9ad02f99dc0ac44ced9",
+      "copy_git_blob": "cd0274e0def0cf9d20c6b9ad02f99dc0ac44ced9",
+      "sha256": "40be3229bc58af70d3b86e255369a1f87ab73a0a2f8bc8908d1ea6958798c62e",
+      "bytes": 1139
+    },
+    {
+      "path": "presidio-analyzer/tests/test_transformers_recognizer.py",
+      "mode": "100644",
+      "git_blob": "744d1a1abebd2c89aaa31a113a896c152ba2569e",
+      "copy_git_blob": "744d1a1abebd2c89aaa31a113a896c152ba2569e",
+      "sha256": "87db99b1923ed3a0d8b277bc510857649c0028b70812faa87d1dcf302baec00f",
+      "bytes": 2862
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_driving_licence_recognizer.py",
+      "mode": "100644",
+      "git_blob": "24c98334dd587ef563b0f7ecf7d8d1b39c2b6c65",
+      "copy_git_blob": "24c98334dd587ef563b0f7ecf7d8d1b39c2b6c65",
+      "sha256": "0c270c8364ad16e2f2ceeee46cb8bed30f0637e84cdcb1e015ecdde89c2f5ac1",
+      "bytes": 2966
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_nhs_recognizer.py",
+      "mode": "100644",
+      "git_blob": "714ffa24af99a66ff3ce755aca7ea78711ce4e7f",
+      "copy_git_blob": "714ffa24af99a66ff3ce755aca7ea78711ce4e7f",
+      "sha256": "1de846305d1f1902efe38993b9ea97df191b81cee50018d35a6da422e0e1ccc0",
+      "bytes": 957
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_nino_recognizer.py",
+      "mode": "100644",
+      "git_blob": "45bbe0622ff87c7021224682e86e7663788cdc96",
+      "copy_git_blob": "45bbe0622ff87c7021224682e86e7663788cdc96",
+      "sha256": "9610e37a9658bed09749d46edf3c5aea83e6ba67a6062687fd5427e18b424a3f",
+      "bytes": 2200
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "365a140cbe7040c2a8b6c0a2e6d70e323ab8315b",
+      "copy_git_blob": "365a140cbe7040c2a8b6c0a2e6d70e323ab8315b",
+      "sha256": "fd3a9b3929f4dd36f7250e059726adf6f186cc82c66e674fb086dbe6d71fc755",
+      "bytes": 3149
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_postcode_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4d9a79d7d5ca50b7d9a358682a6895e0ed9b6a42",
+      "copy_git_blob": "4d9a79d7d5ca50b7d9a358682a6895e0ed9b6a42",
+      "sha256": "3dc6a6e3d96fdea7ed60974e72d3abbc83944bf5a2d7e66cdced8b3c489ba14b",
+      "bytes": 2676
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uk_vehicle_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a9589fc8e185cf4fa7d08c17bacebd470daf762c",
+      "copy_git_blob": "a9589fc8e185cf4fa7d08c17bacebd470daf762c",
+      "sha256": "67485ea8753b530d85db7f8c00fa219f64c918faa25b1c066d41ae6859c0a6ba",
+      "bytes": 5177
+    },
+    {
+      "path": "presidio-analyzer/tests/test_url_recognizer.py",
+      "mode": "100644",
+      "git_blob": "80c4cb68fce43a05f389ff49853c66fbcfbdea18",
+      "copy_git_blob": "80c4cb68fce43a05f389ff49853c66fbcfbdea18",
+      "sha256": "a8826810011f4279be4a1623a3ce0d011b29d933533a7ed2ad379e6cb1e50005",
+      "bytes": 2713
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_bank_recognizer.py",
+      "mode": "100644",
+      "git_blob": "20332dcbb87ad374c1d4d3bdb9c0f7c110f04d3f",
+      "copy_git_blob": "20332dcbb87ad374c1d4d3bdb9c0f7c110f04d3f",
+      "sha256": "f4bbcaa2d6bf2131a12cb2152dacb796a39f14073a345e773468927fb454cb45",
+      "bytes": 928
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ded0185df8040e4baac022e378c8d5a5c91270bf",
+      "copy_git_blob": "ded0185df8040e4baac022e378c8d5a5c91270bf",
+      "sha256": "c09161176835fb14373ca7865bbf9107f27b35054022ae846205a2b1a1df19eb",
+      "bytes": 1810
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_health_insurance_member_id_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a6d79813960979ff7769deb165b161bb122abc8a",
+      "copy_git_blob": "a6d79813960979ff7769deb165b161bb122abc8a",
+      "sha256": "79fe13572fceefcd62d8a38ea9787541a549d5bdbddc3e26df895a2069ffdc4c",
+      "bytes": 6584
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_healthcare_admin_recognizers.py",
+      "mode": "100644",
+      "git_blob": "bd986952aaa0111cf6a463f7482a2b6054dd9682",
+      "copy_git_blob": "bd986952aaa0111cf6a463f7482a2b6054dd9682",
+      "sha256": "c66493acdead294916a3e3f061387610e6d4c1d9c2c8760950cba1e9ea13cd81",
+      "bytes": 19350
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_itin_recognizer.py",
+      "mode": "100644",
+      "git_blob": "9f43266464412a18df4b409737138728c8ed0c0f",
+      "copy_git_blob": "9f43266464412a18df4b409737138728c8ed0c0f",
+      "sha256": "0df9e74fb2ec596e99115fee17006c0e2e96536718780a7a5047a5550e693459",
+      "bytes": 1407
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_mbi_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0863ba62cee1b3fa5cc1f3fa35b57be64c37e007",
+      "copy_git_blob": "0863ba62cee1b3fa5cc1f3fa35b57be64c37e007",
+      "sha256": "2947dca113c27e8d9ac708460780ea5fa540662ce75f5a429b91a758b67b35fa",
+      "bytes": 3543
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_npi_recognizer.py",
+      "mode": "100644",
+      "git_blob": "643b56c8936ad28e9c6cc3766c2d1deba98f6b41",
+      "copy_git_blob": "643b56c8936ad28e9c6cc3766c2d1deba98f6b41",
+      "sha256": "b5c906939ad3eae4aa5370069387c91731a359a3b7a3e9b093d56d51b8a9924c",
+      "bytes": 3438
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "4c72ea4bbe99aa500192bfa16ec479e8c0c47e7d",
+      "copy_git_blob": "4c72ea4bbe99aa500192bfa16ec479e8c0c47e7d",
+      "sha256": "81d0daa273b5f9df0ea9929fc2a7dcef10bad220224a3783f32a3a348929947a",
+      "bytes": 1466
+    },
+    {
+      "path": "presidio-analyzer/tests/test_us_ssn_recognizer.py",
+      "mode": "100644",
+      "git_blob": "c0900b4753b60baf4de0fead491623855bcc2a76",
+      "copy_git_blob": "c0900b4753b60baf4de0fead491623855bcc2a76",
+      "sha256": "f3d7a64494bc1984e6264d810add8fde2fc3bf5fd0b560d603e1b483a0335114",
+      "bytes": 2961
+    },
+    {
+      "path": "presidio-analyzer/tests/test_uuid_recognizer.py",
+      "mode": "100644",
+      "git_blob": "b7cbe36cbbf3cd9c15d918ca1508e382c6ab10ff",
+      "copy_git_blob": "b7cbe36cbbf3cd9c15d918ca1508e382c6ab10ff",
+      "sha256": "3885ec5428ba209e42faa42f874e57992ba2c5be54f0359ce340a92ff38d5059",
+      "bytes": 3835
+    },
+    {
+      "path": "presidio-analyzer/tests/test_yaml_recognizer_models.py",
+      "mode": "100644",
+      "git_blob": "8add06b5de02020f3bb7bd569ce20a862a571774",
+      "copy_git_blob": "8add06b5de02020f3bb7bd569ce20a862a571774",
+      "sha256": "f5ece979cf6ce77ee0a8eec9ac63bb239d5c917cb1d0212f1aa0fb6af4070836",
+      "bytes": 35503
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_company_registration_recognizer.py",
+      "mode": "100644",
+      "git_blob": "a173e2c31684aa94c6a0c4c095a4c7d30fee352f",
+      "copy_git_blob": "a173e2c31684aa94c6a0c4c095a4c7d30fee352f",
+      "sha256": "394ba3c4f5c84b7d211c205f523b70b770c795475cfa54a51e3d5f33c8a10e50",
+      "bytes": 1622
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_driver_license_recognizer.py",
+      "mode": "100644",
+      "git_blob": "ee4a10773352b28f35685b98e2273663e6372f12",
+      "copy_git_blob": "ee4a10773352b28f35685b98e2273663e6372f12",
+      "sha256": "26fa78febc238ef26d0c21a39ecd7715f5f3745029f25eb1d290b444509e18b4",
+      "bytes": 1567
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_id_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "e1c5ad2be1c4b0a03adf1f70ad86aeccf2439bea",
+      "copy_git_blob": "e1c5ad2be1c4b0a03adf1f70ad86aeccf2439bea",
+      "sha256": "59340618a9d847740c9bcbf6cab8a09acc4fd183b11f3277e8768882803f6a9f",
+      "bytes": 3005
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_income_tax_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "6d82f02fb6d0ad7c996d40bb3b0b96cb69295a2b",
+      "copy_git_blob": "6d82f02fb6d0ad7c996d40bb3b0b96cb69295a2b",
+      "sha256": "4b33c22cc253cab4a9ae94db838f0ecfc66d013a63b133b383b00e49e98c3003",
+      "bytes": 1440
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_license_plate_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d99d38b8f2f17d6571574856349226e9ee4dc1f9",
+      "copy_git_blob": "d99d38b8f2f17d6571574856349226e9ee4dc1f9",
+      "sha256": "23482b03871c6f272516b15d710934a4fad36566442d50c8e2c8120c4d1a4a52",
+      "bytes": 1528
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_mobile_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "aef23eae4f80003830e69910400d9563f35c28a5",
+      "copy_git_blob": "aef23eae4f80003830e69910400d9563f35c28a5",
+      "sha256": "10556db390c56e6f40078fd4178b99641975180507c867ccfa2c011aedc0b81b",
+      "bytes": 3023
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_passport_recognizer.py",
+      "mode": "100644",
+      "git_blob": "0e7dfe4a2161502ca80c997148d44b91992b4b34",
+      "copy_git_blob": "0e7dfe4a2161502ca80c997148d44b91992b4b34",
+      "sha256": "e96da663a95b2d14afd4dcb46203afde64f62b511e335d245ffea5ca4dfb62f4",
+      "bytes": 1559
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_telephone_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "f5c892e3b8ca5ce5f8e6f3b6aa289a6d980eb3f2",
+      "copy_git_blob": "f5c892e3b8ca5ce5f8e6f3b6aa289a6d980eb3f2",
+      "sha256": "c3b181059a4a46b321271ace60aae79266586b50905048fc01d861a1c75658b2",
+      "bytes": 2426
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_traffic_register_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "51fb14c5f721f4f32acaade64e2dfcf8afeb8851",
+      "copy_git_blob": "51fb14c5f721f4f32acaade64e2dfcf8afeb8851",
+      "sha256": "633b98f952fa13120dfab3914abb52860ed9a00911d0b31d7f75668829842413",
+      "bytes": 1459
+    },
+    {
+      "path": "presidio-analyzer/tests/test_za_vat_number_recognizer.py",
+      "mode": "100644",
+      "git_blob": "d61946839ab25d053b5bc06434354859a99d65e7",
+      "copy_git_blob": "d61946839ab25d053b5bc06434354859a99d65e7",
+      "sha256": "aff1ee41dc5721efe9cf66aeb348e67125943f9cf89d3fdae63e3e9dcdbf984d",
+      "bytes": 1403
+    },
+    {
+      "path": "presidio-analyzer/uv.lock",
+      "mode": "100644",
+      "git_blob": "b70035312a3629c6c1f72345933f435f01d879e5",
+      "copy_git_blob": "b70035312a3629c6c1f72345933f435f01d879e5",
+      "sha256": "84cc3b43839842fa166fbea86df347f9cdd1642249fb9b3713e44c23eb341890",
+      "bytes": 910021
+    },
+    {
+      "path": "presidio-anonymizer/.dockerignore",
+      "mode": "100644",
+      "git_blob": "23dd2ed83741b28eacceb04549602f806e0ce2e9",
+      "copy_git_blob": "23dd2ed83741b28eacceb04549602f806e0ce2e9",
+      "sha256": "cec6366e09a31b69d5689bf09d9685fadb91db2f359c7281c36ae6bae5f77012",
+      "bytes": 1206
+    },
+    {
+      "path": "presidio-anonymizer/Dockerfile",
+      "mode": "100644",
+      "git_blob": "06157ea01167d957f1b395f367281e10d1fac71c",
+      "copy_git_blob": "06157ea01167d957f1b395f367281e10d1fac71c",
+      "sha256": "09b87ecd008d1982d37f2de16257b09f9db5d58f360d33ae1489f87033061c9f",
+      "bytes": 999
+    },
+    {
+      "path": "presidio-anonymizer/Dockerfile.dev",
+      "mode": "100644",
+      "git_blob": "e2fa9e9c7a557eef15d051497984f1ba32e2410c",
+      "copy_git_blob": "e2fa9e9c7a557eef15d051497984f1ba32e2410c",
+      "sha256": "7e0cf32db4b69ab0882d21c062c519fb22dcae07e9541db31e08d4126a781626",
+      "bytes": 200
+    },
+    {
+      "path": "presidio-anonymizer/Dockerfile.windows",
+      "mode": "100644",
+      "git_blob": "8b2a1b587ba1742f52547accdda9b5a68995610a",
+      "copy_git_blob": "8b2a1b587ba1742f52547accdda9b5a68995610a",
+      "sha256": "b7b78e4a509294697d769f243e02bb62faacdb7db76b8afdd707d9770ce29772",
+      "bytes": 738
+    },
+    {
+      "path": "presidio-anonymizer/README.md",
+      "mode": "100644",
+      "git_blob": "56b979fbdd9a7d661cea796063167b4488f0e563",
+      "copy_git_blob": "56b979fbdd9a7d661cea796063167b4488f0e563",
+      "sha256": "a0123bb61798eea3aaa8725f11c6f6027756621f3faec5a86c91e54343f3b797",
+      "bytes": 8628
+    },
+    {
+      "path": "presidio-anonymizer/app.py",
+      "mode": "100644",
+      "git_blob": "52f75f41a00c51da448fa2db7283ee3b57084f35",
+      "copy_git_blob": "52f75f41a00c51da448fa2db7283ee3b57084f35",
+      "sha256": "3ba503daa59a91851ab39721087c7df1ece3a6237d10fc057e1314212106b759",
+      "bytes": 4823
+    },
+    {
+      "path": "presidio-anonymizer/deploytoazure.json",
+      "mode": "100644",
+      "git_blob": "34d057724570b6f9331a78f14567379b15fa773a",
+      "copy_git_blob": "34d057724570b6f9331a78f14567379b15fa773a",
+      "sha256": "31aa170856fa3fe7fdc213d52defebf44c32405c883679115737cce834c2b717",
+      "bytes": 2489
+    },
+    {
+      "path": "presidio-anonymizer/entrypoint.sh",
+      "mode": "100755",
+      "git_blob": "8a90e902a1cd5273983ff778cdaebb8510c5624d",
+      "copy_git_blob": "8a90e902a1cd5273983ff778cdaebb8510c5624d",
+      "sha256": "52e05a2bda2413429665b13bdcd9fb7d7fc80be61b5c99073070d3a5e3b0c653",
+      "bytes": 76
+    },
+    {
+      "path": "presidio-anonymizer/logging.ini",
+      "mode": "100644",
+      "git_blob": "9df967299fa74d1b7fabccc0253dcf6e9d0009aa",
+      "copy_git_blob": "9df967299fa74d1b7fabccc0253dcf6e9d0009aa",
+      "sha256": "024be9f4cc0fb091d9f007bbe3e00a238fe4f48e01bd0a0bf8cb075bdecf0e68",
+      "bytes": 453
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/__init__.py",
+      "mode": "100644",
+      "git_blob": "d2529938b318d0e45a33284a66d00615af9cc62a",
+      "copy_git_blob": "d2529938b318d0e45a33284a66d00615af9cc62a",
+      "sha256": "f7309b85ba58b0f37063e57aa2421c8f31e3b1291325272833b4b58ce24112f5",
+      "bytes": 904
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/anonymizer_engine.py",
+      "mode": "100644",
+      "git_blob": "cac7426a6e0e9b2b4129ddc0ce364509766468ce",
+      "copy_git_blob": "cac7426a6e0e9b2b4129ddc0ce364509766468ce",
+      "sha256": "a3fcf611b6e2eebe724e61b7636b8d512c7897188adb6751e5664edecd7a711c",
+      "bytes": 11104
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/batch_anonymizer_engine.py",
+      "mode": "100644",
+      "git_blob": "6745dc119137260650f64c304fd2557c5edbf226",
+      "copy_git_blob": "6745dc119137260650f64c304fd2557c5edbf226",
+      "sha256": "f0ad14f132811730a2ee31abdafe6c1c87919cfb9487ccda85a058238d3941c0",
+      "bytes": 3375
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/batch_deanonymize_engine.py",
+      "mode": "100644",
+      "git_blob": "01bb4ab806d33585d6881d8550985185312fca98",
+      "copy_git_blob": "01bb4ab806d33585d6881d8550985185312fca98",
+      "sha256": "883b19cd89a79306fdf156b0a294d69a1de5f072b55a8bfbfbaac2829e95d96c",
+      "bytes": 3465
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/core/__init__.py",
+      "mode": "100644",
+      "git_blob": "ec57496272caf29e7d579a45fa3c649782406ed2",
+      "copy_git_blob": "ec57496272caf29e7d579a45fa3c649782406ed2",
+      "sha256": "787bdf8171a71fe8f18df7063e171c27bd9deb64446ecf6ab64943a38a78185a",
+      "bytes": 173
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/core/engine_base.py",
+      "mode": "100644",
+      "git_blob": "7561b0e8845c62904d6ca9d0265ad99206c1bcb1",
+      "copy_git_blob": "7561b0e8845c62904d6ca9d0265ad99206c1bcb1",
+      "sha256": "8fc399e9ed2ac0712372db58ba5094e2623198f4ab0ddd5b4eb32050367e5a45",
+      "bytes": 4527
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/core/text_replace_builder.py",
+      "mode": "100644",
+      "git_blob": "739a220a803f580c99ebe3da46f085c6a59f4712",
+      "copy_git_blob": "739a220a803f580c99ebe3da46f085c6a59f4712",
+      "sha256": "9a92db839b12b5730a546c6383d58a6ed8dcdb28d2e0a77fcf1debbcc4137665",
+      "bytes": 2256
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/deanonymize_engine.py",
+      "mode": "100644",
+      "git_blob": "c349afaf04b64f40e354e0de8253214982641f97",
+      "copy_git_blob": "c349afaf04b64f40e354e0de8253214982641f97",
+      "sha256": "74264df8cef47e5c830edc43a970e62e46af75973f760df9789a26c83b3d710e",
+      "bytes": 2056
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/__init__.py",
+      "mode": "100644",
+      "git_blob": "6538c6e7bdd4c44860a1b25fcacfdbf562eab179",
+      "copy_git_blob": "6538c6e7bdd4c44860a1b25fcacfdbf562eab179",
+      "sha256": "7d11190be2d6d904e44bb1c47a4af40dac25c8ff2db281b3025d2be9ad3b40a2",
+      "bytes": 747
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/conflict_resolution_strategy.py",
+      "mode": "100644",
+      "git_blob": "36c6eb12fcab242bb3d68a4a6e371420cd101418",
+      "copy_git_blob": "36c6eb12fcab242bb3d68a4a6e371420cd101418",
+      "sha256": "4acb48870c6bf5f1daff852dbc6a918da624a23d928e8944fa3955965a049882",
+      "bytes": 892
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/__init__.py",
+      "mode": "100644",
+      "git_blob": "c5444553136fb7fd13b2a0d1c485f623810b7496",
+      "copy_git_blob": "c5444553136fb7fd13b2a0d1c485f623810b7496",
+      "sha256": "0da796eceeb505b9182b61c2104dab50dc8cd55baa839fe04327fa82d6bdf217",
+      "bytes": 221
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/dict_recognizer_result.py",
+      "mode": "100644",
+      "git_blob": "03beef8468056196b7cd8b1b85ffca8cc0f8b7e0",
+      "copy_git_blob": "03beef8468056196b7cd8b1b85ffca8cc0f8b7e0",
+      "sha256": "0fd9174db48d44c7e82f1a5d6f42abe2d6ba1b50114f5e131669ddc1a6a08102",
+      "bytes": 1044
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/operator_config.py",
+      "mode": "100644",
+      "git_blob": "fdf0d9dde6c65f1a6fefdf42e198ff685debd664",
+      "copy_git_blob": "fdf0d9dde6c65f1a6fefdf42e198ff685debd664",
+      "sha256": "5a9f2aae4616add52f83008f2a0d26847ba678270999c04e9987175042a26898",
+      "bytes": 1709
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/pii_entity.py",
+      "mode": "100644",
+      "git_blob": "c2d39412e1527c5c312bce0d649430a6e78a4090",
+      "copy_git_blob": "c2d39412e1527c5c312bce0d649430a6e78a4090",
+      "sha256": "479b79059eabf2133d4ab82aa511c36dee23543a051804c8da8904e4e1c3b1aa",
+      "bytes": 2064
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/recognizer_result.py",
+      "mode": "100644",
+      "git_blob": "b155de569e6b7cc4d7e920fb13146afccc594099",
+      "copy_git_blob": "b155de569e6b7cc4d7e920fb13146afccc594099",
+      "sha256": "64d71704dde8d232f7d77bb39ac635b5ca99f80f9b076e2fbec714b10ea8f479",
+      "bytes": 4171
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/result/__init__.py",
+      "mode": "100644",
+      "git_blob": "b0ab487ddddd76d47992f95d0ca226632ecc8abd",
+      "copy_git_blob": "b0ab487ddddd76d47992f95d0ca226632ecc8abd",
+      "sha256": "40697862d9d7727b9fdcfb5b1cc19f970f757f6215e55e2aa13362bdb730b6d4",
+      "bytes": 215
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/result/engine_result.py",
+      "mode": "100644",
+      "git_blob": "f60d372d2a5ba6d324899f739bef856846aa3404",
+      "copy_git_blob": "f60d372d2a5ba6d324899f739bef856846aa3404",
+      "sha256": "87d02a4afdbdc5c6a60bcd8ae1eff600eacdea55ac1e64cf3ee8de1e039e5bc7",
+      "bytes": 1858
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/engine/result/operator_result.py",
+      "mode": "100644",
+      "git_blob": "0850d19dc6782a12b69ede1b5a788658a9742a0f",
+      "copy_git_blob": "0850d19dc6782a12b69ede1b5a788658a9742a0f",
+      "sha256": "2786094fa8a72f87cbf9fb6b7d7fc557984ae38ac4aea64fdcd3c1bd68009ac2",
+      "bytes": 2230
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/entities/invalid_exception.py",
+      "mode": "100644",
+      "git_blob": "8c39b0fabf262c1b8724718c212a5c0d48552e35",
+      "copy_git_blob": "8c39b0fabf262c1b8724718c212a5c0d48552e35",
+      "sha256": "8ca67dc90bab404e5f973c3521ff047368c6c9484aea30fc9833fcdbd40f61f4",
+      "bytes": 328
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/__init__.py",
+      "mode": "100644",
+      "git_blob": "9b2b4da37d51cbbd02dc049de13195a650bbd427",
+      "copy_git_blob": "9b2b4da37d51cbbd02dc049de13195a650bbd427",
+      "sha256": "34e2808524ba9db24961aa32a708cc090acb7c0e14ec851a01b37b2d9f7a84f0",
+      "bytes": 929
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/aes_cipher.py",
+      "mode": "100644",
+      "git_blob": "3ccab0d0044abb571c15c6102f7a093d69a5e358",
+      "copy_git_blob": "3ccab0d0044abb571c15c6102f7a093d69a5e358",
+      "sha256": "7f80be478396099e0ac0fb76f6563fbe91173787a50c80d3ed56a0cf233eb0cc",
+      "bytes": 2042
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/ahds_surrogate.py",
+      "mode": "100644",
+      "git_blob": "948aa0ec7afc357b79d3237e35b0deee656b72ee",
+      "copy_git_blob": "948aa0ec7afc357b79d3237e35b0deee656b72ee",
+      "sha256": "0b8233cd6f6eb358246e943312555898b3150426c3e8b6cb9032ecd8fb13a5e3",
+      "bytes": 13911
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/custom.py",
+      "mode": "100644",
+      "git_blob": "ecb1b28fa0a88d7fc78cb5ec42ca472a1bdffdc1",
+      "copy_git_blob": "ecb1b28fa0a88d7fc78cb5ec42ca472a1bdffdc1",
+      "sha256": "175d8093c43ab12023c7c815614f2b6cf93ba79257256bf19a99c62820d705db",
+      "bytes": 1729
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/deanonymize_keep.py",
+      "mode": "100644",
+      "git_blob": "312649a0783a7e6100ca42b786a8c7b29f47fbb8",
+      "copy_git_blob": "312649a0783a7e6100ca42b786a8c7b29f47fbb8",
+      "sha256": "fb25f906c1bc5672f8b545eb9a1580018328186b395bed031ff5bed73701d923",
+      "bytes": 572
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/decrypt.py",
+      "mode": "100644",
+      "git_blob": "0b2f6d7a62578cb64e3fd73f2f9f3b258808bfe7",
+      "copy_git_blob": "0b2f6d7a62578cb64e3fd73f2f9f3b258808bfe7",
+      "sha256": "752e9d608e29887ed54aa16db595eb21ca5fffc6aa04ac313f8e0355664a8517",
+      "bytes": 1391
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/encrypt.py",
+      "mode": "100644",
+      "git_blob": "9bbd481cc23b146c9d2a4d977fb8caa21196639c",
+      "copy_git_blob": "9bbd481cc23b146c9d2a4d977fb8caa21196639c",
+      "sha256": "366189e52f3e309b917fa3e7288467ca908ba794e09ce9124f5a5b343f8b4324",
+      "bytes": 2107
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/hash.py",
+      "mode": "100644",
+      "git_blob": "7133b1f3ef4c845900357f6e0f8a90d4deb60240",
+      "copy_git_blob": "7133b1f3ef4c845900357f6e0f8a90d4deb60240",
+      "sha256": "fd2bf2aa5ec3607c7f5fd546353ba8847838c39c6c413ecad29f316405cab7ca",
+      "bytes": 3071
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/keep.py",
+      "mode": "100644",
+      "git_blob": "cf1b50cd8a74928c79e45553f74b3debdc3dac95",
+      "copy_git_blob": "cf1b50cd8a74928c79e45553f74b3debdc3dac95",
+      "sha256": "bd6cd21b7250045f34a07308e432d08626512ef636c9dbf476ab1e1f74fc1303",
+      "bytes": 1072
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/mask.py",
+      "mode": "100644",
+      "git_blob": "70773d2f7f5738689ea89094f89f525c6de70e21",
+      "copy_git_blob": "70773d2f7f5738689ea89094f89f525c6de70e21",
+      "sha256": "52b080feabd25cfabe820bd5aa6f1a6cacfecbedc873b152b103f9409f6d06ef",
+      "bytes": 2693
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/operator.py",
+      "mode": "100644",
+      "git_blob": "f5abfc3e3c9626cadc93b59bdf6e7c63f800a4ef",
+      "copy_git_blob": "f5abfc3e3c9626cadc93b59bdf6e7c63f800a4ef",
+      "sha256": "a55bb83ef4588e7800392c6e912711bf36201007b85753aabf6ec091fe861533",
+      "bytes": 973
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/operators_factory.py",
+      "mode": "100644",
+      "git_blob": "eee2a3b273e1a29d09217c2ccb82674449061991",
+      "copy_git_blob": "eee2a3b273e1a29d09217c2ccb82674449061991",
+      "sha256": "1254f4d7a34d57e89515c29f7e9867396a625f38e724059432ef146c189a3db1",
+      "bytes": 5179
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/redact.py",
+      "mode": "100644",
+      "git_blob": "b10d8f133f9c8b66fc1b14c814e9f7f647319fe2",
+      "copy_git_blob": "b10d8f133f9c8b66fc1b14c814e9f7f647319fe2",
+      "sha256": "1ce12ce2028fc09c1019f85c844fcd2849a84fa5caea34dd50052095a435d233",
+      "bytes": 706
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/operators/replace.py",
+      "mode": "100644",
+      "git_blob": "9e2a11fc076a153d926d6d1eaef11d83e2082e77",
+      "copy_git_blob": "9e2a11fc076a153d926d6d1eaef11d83e2082e77",
+      "sha256": "a96c92b2034b4a50f9f188deadcc08c5063b9b987a77b039fe766fa43f4341f8",
+      "bytes": 982
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/py.typed",
+      "mode": "100644",
+      "git_blob": "58e42dd2535228b6e3db84f37849c5aecff35a39",
+      "copy_git_blob": "58e42dd2535228b6e3db84f37849c5aecff35a39",
+      "sha256": "363ac354c13d6777784342d4c36b5e0fdeed11f827cd89241b361b22d708b6d3",
+      "bytes": 10
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/services/__init__.py",
+      "mode": "100644",
+      "git_blob": "4d6fd6d564d8bf9fffdccdff23fc31032c4d4f3a",
+      "copy_git_blob": "4d6fd6d564d8bf9fffdccdff23fc31032c4d4f3a",
+      "sha256": "9def8a3de301313aa142a72a32c2fddca5325a948826a3c08bc28242871ad2b6",
+      "bytes": 21
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/services/app_entities_convertor.py",
+      "mode": "100644",
+      "git_blob": "a2a7e3ceaf4eea68822636d52176d7d6b9f8b844",
+      "copy_git_blob": "a2a7e3ceaf4eea68822636d52176d7d6b9f8b844",
+      "sha256": "bc1782c19a8603451688b6b432a21099dea6621ab081c81087f639c41494fa2d",
+      "bytes": 2181
+    },
+    {
+      "path": "presidio-anonymizer/presidio_anonymizer/services/validators.py",
+      "mode": "100644",
+      "git_blob": "57c050f2edb936b16194f1b717e5633eba687c8b",
+      "copy_git_blob": "57c050f2edb936b16194f1b717e5633eba687c8b",
+      "sha256": "efafa1601adb58fb0b57f7432708490388a2cbec88e16ae4fbca228f105813bf",
+      "bytes": 3250
+    },
+    {
+      "path": "presidio-anonymizer/pyproject.toml",
+      "mode": "100644",
+      "git_blob": "4371fbc27f6071a2ead0c32c95eb66cefbf75ec8",
+      "copy_git_blob": "4371fbc27f6071a2ead0c32c95eb66cefbf75ec8",
+      "sha256": "efab2e24d8dfd6b20a46d8bca41722449a6d352f86b80b2be7effe777ea699c5",
+      "bytes": 1402
+    },
+    {
+      "path": "presidio-anonymizer/tests/__init__.py",
+      "mode": "100644",
+      "git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "copy_git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "sha256": "2342e6609870d3426cedf7bbfe6b9e6bc3b51dfe4d1e1f28805dbf11d825cc3b",
+      "bytes": 49
+    },
+    {
+      "path": "presidio-anonymizer/tests/conftest.py",
+      "mode": "100644",
+      "git_blob": "9f29db11b020e2fdd2d61cea7f8110a8766e62ae",
+      "copy_git_blob": "9f29db11b020e2fdd2d61cea7f8110a8766e62ae",
+      "sha256": "88113f6dc93275eda2dac9540360320d42b6c0c33ff05308a4002f43face1d4e",
+      "bytes": 1477
+    },
+    {
+      "path": "presidio-anonymizer/tests/integration/__init__.py",
+      "mode": "100644",
+      "git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "copy_git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "sha256": "2342e6609870d3426cedf7bbfe6b9e6bc3b51dfe4d1e1f28805dbf11d825cc3b",
+      "bytes": 49
+    },
+    {
+      "path": "presidio-anonymizer/tests/integration/test_anonymize_engine.py",
+      "mode": "100644",
+      "git_blob": "c87a90f9cb9c302ec18da18077cd5d27c2cfa5a3",
+      "copy_git_blob": "c87a90f9cb9c302ec18da18077cd5d27c2cfa5a3",
+      "sha256": "552bf16e772d5162e2a427c1aab8d66044118927c65399d5fd5ee07f8eac6e92",
+      "bytes": 21501
+    },
+    {
+      "path": "presidio-anonymizer/tests/integration/test_deanonymize_engine.py",
+      "mode": "100644",
+      "git_blob": "92d78f779f9e8ea260a96ce493dd2c34c2f64e8e",
+      "copy_git_blob": "92d78f779f9e8ea260a96ce493dd2c34c2f64e8e",
+      "sha256": "956c16ffabd4a7f5c815d10e39108b9dcc8c7477e793605e113c2ae6da807162",
+      "bytes": 4856
+    },
+    {
+      "path": "presidio-anonymizer/tests/mock_operators.py",
+      "mode": "100644",
+      "git_blob": "a44cbe7c8a0f094cac27da339641155431d8af94",
+      "copy_git_blob": "a44cbe7c8a0f094cac27da339641155431d8af94",
+      "sha256": "4e65218bc9c203e2f81e48067b8a755eaf6ee1cf780597fa1fbafa7ecfe22ded",
+      "bytes": 2828
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/__init__.py",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "copy_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_custom.py",
+      "mode": "100644",
+      "git_blob": "e0ef46e76906d8c811a4756f4954708eca76d73a",
+      "copy_git_blob": "e0ef46e76906d8c811a4756f4954708eca76d73a",
+      "sha256": "1b05ae3fcf4adb40f83c095ff37ffb1f61acdfac6974beb0c3e7bd9088f2cb78",
+      "bytes": 2697
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_decrypt.py",
+      "mode": "100644",
+      "git_blob": "0b0213ec222a469fe1430f21bc540e40ccc10f59",
+      "copy_git_blob": "0b0213ec222a469fe1430f21bc540e40ccc10f59",
+      "sha256": "ad60978390eda73fc2f039a61d4371a69fb51fb021b8cf46623a3cad0f831d7b",
+      "bytes": 1491
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_encrypt.py",
+      "mode": "100644",
+      "git_blob": "04704b511095f97c7f4a331aac50ea08c5c62b16",
+      "copy_git_blob": "04704b511095f97c7f4a331aac50ea08c5c62b16",
+      "sha256": "61b87e24eff9a896889eef7ec50900e40f7eb2564490dbd3eab5983f201b478c",
+      "bytes": 1496
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_hash.py",
+      "mode": "100644",
+      "git_blob": "c0786321e697365513bb5380f0c14048c209baac",
+      "copy_git_blob": "c0786321e697365513bb5380f0c14048c209baac",
+      "sha256": "4b9177ded0819894a2454f86afa86cfafffb25c8282ad2fc5fb81315aac80e0c",
+      "bytes": 8516
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_keep.py",
+      "mode": "100644",
+      "git_blob": "1eb0b008c6643224dd04bb3694150041f54f2d06",
+      "copy_git_blob": "1eb0b008c6643224dd04bb3694150041f54f2d06",
+      "sha256": "c12927507564c2b9b5d84282586a8838c557f4e16ebe86a64639deede6d045b2",
+      "bytes": 678
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_mask.py",
+      "mode": "100644",
+      "git_blob": "d2d83c468bf0e28ef858f71883a1c87503d864bb",
+      "copy_git_blob": "d2d83c468bf0e28ef858f71883a1c87503d864bb",
+      "sha256": "4f0f60228fc3b31c9eb6d8a520ddc1ca80d35ced72a82405a7919f18a0140dbe",
+      "bytes": 4121
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_operators_factory.py",
+      "mode": "100644",
+      "git_blob": "f76510d9263b6822b950082c267cacf629176db1",
+      "copy_git_blob": "f76510d9263b6822b950082c267cacf629176db1",
+      "sha256": "c256851624556ed2551427f1951964052262bf09c5a70932efda704d8858b79f",
+      "bytes": 4854
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_redact.py",
+      "mode": "100644",
+      "git_blob": "66eb7417d64b4eb3915f86a3231fd5259c5d94a2",
+      "copy_git_blob": "66eb7417d64b4eb3915f86a3231fd5259c5d94a2",
+      "sha256": "3d75884f19aa6b4ae7c18b4b00ca7e9e9a7e7cde1dbbc9bfc0e056c0054ace97",
+      "bytes": 427
+    },
+    {
+      "path": "presidio-anonymizer/tests/operators/test_replace.py",
+      "mode": "100644",
+      "git_blob": "bfe1f155ddac9b0740c09cb78fff591605c7ddc6",
+      "copy_git_blob": "bfe1f155ddac9b0740c09cb78fff591605c7ddc6",
+      "sha256": "cb7d73a37cec35e96bf6ba0857c1e8654fb138d848a525acb54d9d875233db8c",
+      "bytes": 813
+    },
+    {
+      "path": "presidio-anonymizer/tests/services/__init__.py",
+      "mode": "100644",
+      "git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "copy_git_blob": "72db32861b1154f53c7470c3327e3224c4ed2869",
+      "sha256": "2342e6609870d3426cedf7bbfe6b9e6bc3b51dfe4d1e1f28805dbf11d825cc3b",
+      "bytes": 49
+    },
+    {
+      "path": "presidio-anonymizer/tests/services/test_aes_cypher.py",
+      "mode": "100644",
+      "git_blob": "f6949f4b31a3b75eaf6a7ec45e5806bc4e4e48ed",
+      "copy_git_blob": "f6949f4b31a3b75eaf6a7ec45e5806bc4e4e48ed",
+      "sha256": "d93d3da120defb857771f5d73d80dc9a40b4c4c0b6cd19ff1ac677e5d1273218",
+      "bytes": 1943
+    },
+    {
+      "path": "presidio-anonymizer/tests/services/test_validators.py",
+      "mode": "100644",
+      "git_blob": "febbba68dbf3966780ce141d65ae91fa796e9035",
+      "copy_git_blob": "febbba68dbf3966780ce141d65ae91fa796e9035",
+      "sha256": "6464915fa35e6b25949472123c1cb04410ad9736181b3c0b07914e1a6f06f5eb",
+      "bytes": 3567
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_ahds_surrogate.py",
+      "mode": "100644",
+      "git_blob": "bde7cc1be8a3d9000ed5aceeae4ad0021aebacae",
+      "copy_git_blob": "bde7cc1be8a3d9000ed5aceeae4ad0021aebacae",
+      "sha256": "45c283aa5156776edbf8c8c8511a0abc95a3c27633bb66464db2b2f57e9f43d4",
+      "bytes": 17087
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_ahds_surrogate_credential_selection.py",
+      "mode": "100644",
+      "git_blob": "94a56546241b24b0d74f576fc0e9660baa010cad",
+      "copy_git_blob": "94a56546241b24b0d74f576fc0e9660baa010cad",
+      "sha256": "41307876f78785b425f9848e0fe1f047ed0664cdcb0a11a6e1af9f4ad87611ea",
+      "bytes": 8421
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_anonymizer_engine.py",
+      "mode": "100644",
+      "git_blob": "f29c6d95172a14ec0c5d7e7bc001090e49028a51",
+      "copy_git_blob": "f29c6d95172a14ec0c5d7e7bc001090e49028a51",
+      "sha256": "978d96653c0e27ddf6d1e591be8cb30cd128dfe6db41ca048fc44da3ad49e91f",
+      "bytes": 14195
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_app_entities_convertor.py",
+      "mode": "100644",
+      "git_blob": "5f1e2b41edaaeecf84bf4820d50084008df3c077",
+      "copy_git_blob": "5f1e2b41edaaeecf84bf4820d50084008df3c077",
+      "sha256": "5a25ad59db9eb19006620101052d2e386b4b73e71c5930dd3b6a25366f5bca09",
+      "bytes": 6998
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_batch_anonymizer_engine.py",
+      "mode": "100644",
+      "git_blob": "6f0f7decf29774744fb30c13184a2986c25d4997",
+      "copy_git_blob": "6f0f7decf29774744fb30c13184a2986c25d4997",
+      "sha256": "4a1119aa045a572da36755df953502035b788979466c58e5e245fd6735716bdc",
+      "bytes": 4673
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_batch_deanonymize_engine.py",
+      "mode": "100644",
+      "git_blob": "692e383c0981cd8c90e8cea58b110bcab85b0a12",
+      "copy_git_blob": "692e383c0981cd8c90e8cea58b110bcab85b0a12",
+      "sha256": "b23a238803c5eb5fd5c75019af2fa3a139dcbd9d31a866ce579df25cb87e656b",
+      "bytes": 5821
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_conflict_resolution_strategy.py",
+      "mode": "100644",
+      "git_blob": "8245dcea4f9328ea7d7a70021502d2b4cb27a9b4",
+      "copy_git_blob": "8245dcea4f9328ea7d7a70021502d2b4cb27a9b4",
+      "sha256": "e957fbfe3b3581e026dec5b00b99d5d0a57df1220c97d89eed37eee78cf56f68",
+      "bytes": 7264
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_engine_result.py",
+      "mode": "100644",
+      "git_blob": "3ee1a9b3f75d6dbdef7aabbb85e9447ae3097a98",
+      "copy_git_blob": "3ee1a9b3f75d6dbdef7aabbb85e9447ae3097a98",
+      "sha256": "d80425771eb0300427ef7a98cbd05946c6eb78f78d686a7016f4c9ec4a200b10",
+      "bytes": 1364
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_operator_config.py",
+      "mode": "100644",
+      "git_blob": "6cd49770b555e00539ccdd45f8c2dd0c6c639219",
+      "copy_git_blob": "6cd49770b555e00539ccdd45f8c2dd0c6c639219",
+      "sha256": "493f591f4d94b8be74a6e93faf144f9c293aaa39066d920ea99465bb71e22f59",
+      "bytes": 1804
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_operator_result.py",
+      "mode": "100644",
+      "git_blob": "911d10cd79efde8e99243843e0956823d7aba83c",
+      "copy_git_blob": "911d10cd79efde8e99243843e0956823d7aba83c",
+      "sha256": "1f5c1e490b78ee426319ab188a4b4b307acfe111ebefe3697c5acc08e7d0f394",
+      "bytes": 1138
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_pii_entity.py",
+      "mode": "100644",
+      "git_blob": "ec4cf10e9e017ecbb901dfe2e59634d3156b04ff",
+      "copy_git_blob": "ec4cf10e9e017ecbb901dfe2e59634d3156b04ff",
+      "sha256": "781fbdd309670415b2e483e31926c175a40e7ca5f107a7b9c809079d11e6f429",
+      "bytes": 535
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_readme.py",
+      "mode": "100644",
+      "git_blob": "b66a6c820ac4323c6f7d81401cb86038589a64b4",
+      "copy_git_blob": "b66a6c820ac4323c6f7d81401cb86038589a64b4",
+      "sha256": "de8080e0f64eadb77b5b5f7f47c27e865f275d103fc7a4caced8dc5a7eeba429",
+      "bytes": 2429
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_recognizer_result.py",
+      "mode": "100644",
+      "git_blob": "bbdcfbae92020c4c6af27d31ca10d9b6c32e1bfa",
+      "copy_git_blob": "bbdcfbae92020c4c6af27d31ca10d9b6c32e1bfa",
+      "sha256": "c15f559ec0ac28f66da13126268f56e4e530e6e50b7e17d3931ad7a31db9747a",
+      "bytes": 7596
+    },
+    {
+      "path": "presidio-anonymizer/tests/test_text_replace_builder.py",
+      "mode": "100644",
+      "git_blob": "08ca17de43feaf39427f611d0e8ba6fd05ffa573",
+      "copy_git_blob": "08ca17de43feaf39427f611d0e8ba6fd05ffa573",
+      "sha256": "913bb3fb98dbd5dc78a16ad5b66cc2db2581f706b5486052897d57cd944add36",
+      "bytes": 2082
+    },
+    {
+      "path": "presidio-anonymizer/uv.lock",
+      "mode": "100644",
+      "git_blob": "25ec86a38b43783f80dbb899e2952ded80d16383",
+      "copy_git_blob": "25ec86a38b43783f80dbb899e2952ded80d16383",
+      "sha256": "a22db812a8fbaaf4f5b1fc7a31d2ce76ea02a79c6e71ad3c1d6140e901509bfc",
+      "bytes": 206571
+    }
+  ]
+}

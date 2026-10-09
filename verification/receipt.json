@@ -1,0 +1,105 @@
+{
+  "stage_run": {
+    "entrypoint": "verify.ps1 -PythonCommand <explicit command or executable path>",
+    "runtime": "CPython 3.12.14",
+    "platform": "Windows PowerShell child process",
+    "dependency_policy": "pre-existing task-local site-packages reused; no install, wheel acquisition, model download, or native toolchain acquisition",
+    "tests": {
+      "suite": "unittest test_redaction_cli.py",
+      "passed": 6,
+      "duration_seconds": 8.433,
+      "full_upstream_suite_run": false
+    },
+    "temporary_drive_mapping": {
+      "created_by_verifier": true,
+      "selected_drive": "Z:",
+      "removed_by_verifier": true
+    },
+    "temporary_test_directories_removed": true,
+    "stage_artifacts_left": false,
+    "stage_bytecode_caches_left": false
+  },
+  "source_copy": {
+    "repository": "https://github.com/data-privacy-stack/presidio",
+    "commit": "2523c7b74a469270c5c78bb253f140eafca21e31",
+    "manifest_file": "SOURCE_MANIFEST.json",
+    "manifest_sha256": "4c9f79a0bf666eb3ad7d77ddb5f4127cbbe4a47227a34796419dac624c08bba9",
+    "manifest_entries": 467,
+    "manifest_bytes": 3162137,
+    "all_source_entries_verified": true,
+    "derived_source_digest": "89fedf24a5cf4e2abb359ad0a58fb894fa86e80fce7c93b70b31566042840362",
+    "git_mode_distribution_from_original_manifest": {
+      "100644": 464,
+      "100755": 3
+    }
+  },
+  "curated_wrapper": {
+    "private_wrapper_sha256": "cc877614580ea1647885e134d518fae93822a8ab287f827d5c0bab066a48c1a7",
+    "curated_wrapper_sha256": "e76396a243c518f398a92f335fbed95c6647c4307c638414f96e477d8d901cff",
+    "adapter_diff": "CANDIDATE_DIR = IMPROVED_DIR.parent -> CANDIDATE_DIR = IMPROVED_DIR",
+    "upstream_blobs_changed": false
+  },
+  "copied_imports": [
+    {
+      "module": "presidio_analyzer",
+      "path": "copied-component/presidio-analyzer/presidio_analyzer/__init__.py",
+      "sha256": "4a6e9566a79c4cc9eaeeb68f3a531c9a15318117aece4fdce11b7af0bfd469c6"
+    },
+    {
+      "module": "presidio_analyzer.pattern_recognizer",
+      "path": "copied-component/presidio-analyzer/presidio_analyzer/pattern_recognizer.py",
+      "sha256": "38dbbb9b2a8fa9e9427cb556240fc3561cbdfa2e033e464d4360782c391c5ca2"
+    },
+    {
+      "module": "presidio_analyzer.predefined_recognizers.generic.email_recognizer",
+      "path": "copied-component/presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/email_recognizer.py",
+      "sha256": "1d4ff93e067426c9db105100f8343d7bcb3cc9a8115ce2511782e7858300f59d"
+    },
+    {
+      "module": "presidio_anonymizer",
+      "path": "copied-component/presidio-anonymizer/presidio_anonymizer/__init__.py",
+      "sha256": "f7309b85ba58b0f37063e57aa2421c8f31e3b1291325272833b4b58ce24112f5"
+    },
+    {
+      "module": "presidio_anonymizer.anonymizer_engine",
+      "path": "copied-component/presidio-anonymizer/presidio_anonymizer/anonymizer_engine.py",
+      "sha256": "a3fcf611b6e2eebe724e61b7636b8d512c7897188adb6751e5664edecd7a711c"
+    }
+  ],
+  "previously_recorded_source_copy_baseline": {
+    "repeated_in_this_curation": false,
+    "prior_result": "one synthetic ASCII email produced matching source/copy finding and masked output"
+  },
+  "focused_precuration_sentinel_probe": {
+    "input": "qa.person@example.invalid",
+    "flow": "create_proposal followed by approve_proposal",
+    "proposal_had_findings": true,
+    "approved_file_existed": true,
+    "proposal_digest_matched": true,
+    "sentinels_installed_before_import": true,
+    "sentinel_targets": [
+      "tldextract.extract",
+      "socket.socket.connect",
+      "socket.create_connection"
+    ],
+    "extract_calls_observed": 0,
+    "network_attempts_observed": 0,
+    "scope": "one synthetic run and three patched call sites only; not a general network audit"
+  },
+  "long_path_diagnosis": {
+    "earlier_v2_failure_reclassified": "path-length handling is consistent with the v3 result; the sole cause was not isolated",
+    "threshold_controlled": false,
+    "missing_source_claim": false
+  },
+  "research": {
+    "paper_cited": false,
+    "reason": "No directly relevant peer-reviewed paper was selected to validate this deterministic email-only implementation; no research claim is made."
+  },
+  "claims_not_made": [
+    "No actual Human identity or approval is authenticated.",
+    "No cryptographic signature is produced.",
+    "No general PII, Japanese, adversarial, or real-world accuracy is established.",
+    "No complete dependency network audit or production-safe external handoff is established.",
+    "No fresh dependency install, upstream test suite, remote CI, or publication occurred."
+  ]
+}

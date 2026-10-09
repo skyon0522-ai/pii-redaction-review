@@ -1,0 +1,19 @@
+Local PII Redaction Review Example
+
+The complete copied Presidio Analyzer and Presidio Anonymizer package
+directories are retained in copied-component/ from
+data-privacy-stack/presidio, commit
+2523c7b74a469270c5c78bb253f140eafca21e31. All 467 files listed in
+SOURCE_MANIFEST.json remain byte-identical to the pinned Git blobs. The
+upstream root LICENSE and NOTICE are retained inside copied-component/ and
+must remain with that source. Presidio's upstream notices and attribution
+are not replaced by this file.
+
+The task-authored .gitattributes, .gitignore, SOURCE_MANIFEST.json,
+redaction_cli.py, test_redaction_cli.py, verify.ps1,
+examples/synthetic-email.txt, README.md, PROVENANCE.md, VERIFICATION.md,
+verification/receipt.json, and verification/verifier-cleanup.json are covered
+by LICENSE.authored. That MIT
+license applies only to those authored additions. It does not relicense or
+claim ownership of copied Presidio files. The fixture contains synthetic
+text; no customer or personal data is included.
