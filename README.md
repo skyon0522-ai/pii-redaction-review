@@ -14,13 +14,13 @@ The offsets differ because `é` uses two UTF-8 bytes. The `example.invalid` addr
 
 ## Verify and try the two-step flow
 
-Use PowerShell 7 and Python 3.10–3.14. The copied Analyzer metadata requires spaCy, NumPy, click, regex, tldextract, PyYAML, phonenumbers, and Pydantic within the ranges in `copied-component/presidio-analyzer/pyproject.toml`; the copied Anonymizer metadata requires cryptography within the range in `copied-component/presidio-anonymizer/pyproject.toml`. These are unpinned package ranges, not a lockfile. A fresh dependency installation has not been verified. The recorded run reused an existing task-local Python 3.12.14 environment. This example does not install or download an NLP model. The verifier takes the Python command or executable path explicitly, does not install packages, and runs the focused tests:
+Use PowerShell 7 and Python 3.10–3.14. The copied Analyzer metadata requires spaCy, NumPy, click, regex, tldextract, PyYAML, phonenumbers, and Pydantic within the ranges in `copied-component/presidio-analyzer/pyproject.toml`; the copied Anonymizer metadata requires cryptography within the range in `copied-component/presidio-anonymizer/pyproject.toml`. These are unpinned package ranges, not a lockfile. A separate fresh Windows CPython 3.12.14 virtual environment acquired 54 wheels from official PyPI using these declared ranges; `pip check` and the current verifier's six tests passed. Other operating systems and Python versions have not been verified. See [the fresh-environment record](verification/fresh-environment.json). This example does not install or download an NLP model. The verifier takes the Python command or executable path explicitly, does not install packages, and runs the focused tests:
 
 ```powershell
 pwsh ./verify.ps1 -PythonCommand python
 ```
 
-On Windows, the verifier temporarily maps this stage to an available drive when it runs, then removes only the mapping it created. It does not change the Python environment. The run uses the selected interpreter's already available site-packages; dependency setup from a fresh environment remains unverified.
+On Windows, the verifier temporarily maps this stage to an available drive when it runs, then removes only the mapping it created. It does not change the Python environment. The verifier uses the selected interpreter's already available site-packages. Set up dependencies before running it; the verifier itself does not create an environment or download packages.
 
 To prepare a proposal from the synthetic fixture:
 

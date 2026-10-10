@@ -16,6 +16,14 @@ Observed versions in the reused environment were spaCy 3.8.16, regex 2026.9.29, 
 
 The tests exercised proposal-only behavior, the separate approval command, missing and incorrect digests, the matching digest, stale source and input rejection, altered proposal/output rejection, invalid UTF-8 byte boundaries, exclusive output creation, and the phone-like non-email miss. They did not run the upstream Presidio test suite. The included source manifest checks all 467 copied files by byte count, SHA-256 and Git blob ID; the run's derived source digest is recorded in the receipt.
 
+## Fresh Windows environment check (2026-10-10)
+
+A separate isolated CPython 3.12.14 virtual environment installed the copied Analyzer and Anonymizer's declared dependency ranges from official PyPI, using `--no-cache-dir --only-binary=:all:`. It acquired 54 wheels and used no system site-packages. `pip check` passed. Five imported component paths and their hashes matched the copied source. No Presidio registry package or NLP model was installed.
+
+The actual current `verify.ps1`, supplied with the fresh interpreter path, ran all six focused tests in 4.346 seconds and exited 0. Its temporary drive mapping was removed; all 481 published source files and the file set were unchanged afterward. The compact record is [verification/fresh-environment.json](verification/fresh-environment.json).
+
+The earlier reused-environment run and stubbed cleanup-branch check above remain distinct historical results. This later run closes their fresh-install and real-verifier rerun gaps for this Windows/Python profile only. It does not establish other platforms, versions, general PII accuracy, full upstream coverage or network behavior. Dependency ranges remain unpinned; this record is not a lockfile.
+
 ## Focused no-network sentinel probe
 
 A separate pre-curation probe completed one synthetic `create_proposal` and `approve_proposal` flow through the pinned copied component. Sentinels installed before importing the wrapper recorded zero calls to `tldextract.extract`, `socket.socket.connect`, and `socket.create_connection`. The probe also observed a proposal finding, a created approved record, and a matching proposal digest. The independent v3 receipt records the import paths and module hashes.

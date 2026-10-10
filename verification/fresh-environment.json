@@ -1,0 +1,18 @@
+{
+  "profile": "Windows; isolated CPython 3.12.14 virtual environment; PowerShell 7",
+  "source_head": "9add8c487356f14014f5657e35c78a5cf645c6cd",
+  "source_files": 481,
+  "private_receipt_sha256": "58ae28d86389179f9feff20fc1c718fec7dad9ed0300855445d9a42d189f30d0",
+  "installation": "Declared copied-component dependency ranges; 54 fresh wheels from official PyPI; no-cache-dir; only-binary=:all:",
+  "system_site_packages": false,
+  "pip_check_exit": 0,
+  "copied_module_path_hash_bindings": 5,
+  "verifier_sha256": "d8c14dbcba1a4854d4cdd8353d4cae9748fec4c704b17fda5ce14f12ccb86ffa",
+  "focused_tests": 6,
+  "test_seconds": 4.346,
+  "verifier_exit": 0,
+  "temporary_mapping_removed": true,
+  "source_bytes_and_fileset_unchanged": true,
+  "lockfile": false,
+  "limits": "One OS/Python profile and six focused tests; no general PII accuracy, NLP model, upstream suite or general network audit."
+}
