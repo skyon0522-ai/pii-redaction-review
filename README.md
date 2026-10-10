@@ -2,6 +2,14 @@
 
 This small Python example reuses Presidio's existing email pattern recognizer and anonymizer. It prepares a local redaction proposal, then writes a separate local output only after an explicit command supplies the SHA-256 digest of the proposal being reviewed. It reads and writes local files; it does not submit the input or output to an external service.
 
+## Find the relevant part
+
+| Need | Start here |
+| --- | --- |
+| See the redacted sample and approval result | [Synthetic example](#synthetic-example) and [the fixture](examples/synthetic-email.txt) |
+| Reproduce the proposal and reviewed write | [Verify and try the two-step flow](#verify-and-try-the-two-step-flow) and [CLI](redaction_cli.py) |
+| Check the executed source, tests and limits | [Provenance](PROVENANCE.md), [verification](VERIFICATION.md), [focused tests](test_redaction_cli.py) and [limits](#limits) |
+
 ## Synthetic example
 
 The included input is `é: qa.person@example.invalid`. On the recorded run, Presidio found one `EMAIL_ADDRESS` span at character offsets `[3, 28)` and UTF-8 byte offsets `[4, 29)`, with score `0.5`, and produced:
