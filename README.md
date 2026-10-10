@@ -9,6 +9,7 @@ This small Python example reuses Presidio's existing email pattern recognizer an
 | See the redacted sample and approval result | [Synthetic example](#synthetic-example) and [the fixture](examples/synthetic-email.txt) |
 | Reproduce the proposal and reviewed write | [Verify and try the two-step flow](#verify-and-try-the-two-step-flow) and [CLI](redaction_cli.py) |
 | Check the executed source, tests and limits | [Provenance](PROVENANCE.md), [verification](VERIFICATION.md), [focused tests](test_redaction_cli.py) and [limits](#limits) |
+| Report a bug or security concern safely | [Security and reporting](SECURITY.md) |
 
 ## Synthetic example
 
@@ -22,18 +23,23 @@ The offsets differ because `é` uses two UTF-8 bytes. The `example.invalid` addr
 
 ## Verify and try the two-step flow
 
-Use PowerShell 7 and Python 3.10–3.14. The copied Analyzer metadata requires spaCy, NumPy, click, regex, tldextract, PyYAML, phonenumbers, and Pydantic within the ranges in `copied-component/presidio-analyzer/pyproject.toml`; the copied Anonymizer metadata requires cryptography within the range in `copied-component/presidio-anonymizer/pyproject.toml`. These are unpinned package ranges, not a lockfile. A separate fresh Windows CPython 3.12.14 virtual environment acquired 54 wheels from official PyPI using these declared ranges; `pip check` and the current verifier's six tests passed. Other operating systems and Python versions have not been verified. See [the fresh-environment record](verification/fresh-environment.json). This example does not install or download an NLP model. The verifier takes the Python command or executable path explicitly, does not install packages, and runs the focused tests:
+The locally verified profile is Windows x64, CPython 3.12.14, and PowerShell 7. [requirements-windows-py312.lock](requirements-windows-py312.lock) pins all 54 direct and transitive runtime packages to the versions and official-PyPI wheel hashes observed in the earlier [fresh-environment run](verification/fresh-environment.json). The wheel lock targets Windows x64 and CPython 3.12; it is not a cross-platform lock. No Presidio registry package or NLP model is installed. From a checkout, create a fresh environment, install the locked wheels, and run the existing verifier:
 
 ```powershell
-pwsh ./verify.ps1 -PythonCommand python
+python -I -m venv .venv
+$PythonCommand = Join-Path $PWD '.venv/Scripts/python.exe'
+& $PythonCommand -I -m pip install --index-url https://pypi.org/simple --require-hashes --no-cache-dir --only-binary=:all: -r requirements-windows-py312.lock
+& $PythonCommand -I -m pip check
+pwsh -NoProfile -File ./verify.ps1 -PythonCommand $PythonCommand
 ```
+
+The [Windows workflow](.github/workflows/windows-verify.yml) selects CPython 3.12.10, the available official Windows 3.12 build, and uses the same locked install, `pip check`, and verifier with `contents: read` permission and action commit pins. Local results and remote CI status are recorded separately in [VERIFICATION.md](VERIFICATION.md).
 
 On Windows, the verifier temporarily maps this stage to an available drive when it runs, then removes only the mapping it created. It does not change the Python environment. The verifier uses the selected interpreter's already available site-packages. Set up dependencies before running it; the verifier itself does not create an environment or download packages.
 
 To prepare a proposal from the synthetic fixture:
 
 ```powershell
-$PythonCommand = 'python'
 $Proposal = & $PythonCommand -B ./redaction_cli.py propose `
   --input ./examples/synthetic-email.txt `
   --proposal ./artifacts/proposal.json | ConvertFrom-Json

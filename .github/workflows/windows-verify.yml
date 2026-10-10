@@ -1,0 +1,35 @@
+name: Windows verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-2025
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12.10'
+          architecture: x64
+      - name: Install locked dependencies in a fresh environment
+        run: |
+          python -I -m venv "$env:RUNNER_TEMP\pii-venv"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & "$env:RUNNER_TEMP\pii-venv\Scripts\python.exe" -I -m pip install --index-url https://pypi.org/simple --require-hashes --no-cache-dir --only-binary=:all: -r requirements-windows-py312.lock
+      - name: Check dependency consistency
+        run: '& "$env:RUNNER_TEMP\pii-venv\Scripts\python.exe" -I -m pip check'
+      - name: Run the existing verifier
+        run: pwsh -NoProfile -File ./verify.ps1 -PythonCommand "$env:RUNNER_TEMP\pii-venv\Scripts\python.exe"

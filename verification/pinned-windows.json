@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-10T17:40:28.684866+00:00",
+  "profile": "Windows x64; isolated CPython 3.12.14; PowerShell 7",
+  "focused_tests": 6,
+  "test_seconds": 34.504,
+  "pinned_wheels": 54,
+  "lock_sha256": "5f4e3721674faeee11841b908dd28f7eed7d5f24e147b10ca5850b38eb74b80b",
+  "verifier_sha256": "d8c14dbcba1a4854d4cdd8353d4cae9748fec4c704b17fda5ce14f12ccb86ffa",
+  "pip_version": "25.0.1",
+  "copied_files": 467,
+  "copied_bytes_unchanged": true,
+  "runtime_and_tests_unchanged": true,
+  "drive_inventory_unchanged": true,
+  "system_site_packages": false,
+  "official_pypi_only": true,
+  "NLP_model_requested": false,
+  "source_head": "5cb731ba2eb97b91a66e54e1737ad0920caff227",
+  "lock_source": "Versions and wheel SHA-256 values from the earlier official-PyPI report matched to observed installed packages",
+  "installation": "New venv; exact wheel hashes; official PyPI; no-cache-dir; only-binary=:all:",
+  "pip_check_exit": 0,
+  "verifier_exit": 0,
+  "remote_ci": {
+    "status": "prepared; not executed",
+    "runner": "windows-2025",
+    "python": "3.12.10",
+    "reason": "Official setup-python manifest has Windows 3.12.10, not Windows 3.12.14"
+  },
+  "limits": "Local Windows CPython 3.12.14 and six synthetic tests only; no cross-platform, upstream-suite, general PII accuracy, authentication, or general network audit claim"
+}
